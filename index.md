@@ -18,11 +18,6 @@ fields, statuses, comments, and attachments without sharing credentials.
 - [For Jira users](./for-jira-users.html) — Everyday use and the Partner sync panel.
 - [Troubleshooting](./troubleshooting.html) — Common messages, synchronisation problems, and solutions.
 
-## Complete technical documentation
-
-For detailed architecture, development instructions, and technical references,
-see the [complete documentation on GitHub](https://github.com/rsavaikar/documentation/blob/main/README.md).
-
 ## Support and policies
 
 - [Support](./support.html) — Contact details and information to include when requesting help.
