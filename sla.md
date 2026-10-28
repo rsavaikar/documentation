@@ -42,7 +42,7 @@ Customer escalations forwarded by Atlassian Support receive a first response wit
 
 ## Security issues
 
-Report suspected vulnerabilities by email with **"Security"** in the subject. We acknowledge security reports within 1 business day and fix confirmed vulnerabilities within the timeframes of Atlassian's [Security Bug Fix Policy for Marketplace apps](https://developer.atlassian.com/platform/marketplace/security-bug-fix-policy/).
+Report suspected vulnerabilities by email with **"Security"** in the subject. We acknowledge security reports within 1 business day and fix confirmed vulnerabilities within the timeframes of Atlassian's [Security Bug Fix Policy for Marketplace apps](https://developer.atlassian.com/platform/marketplace/security-bugfix-policy/).
 
 ## Service availability
 
