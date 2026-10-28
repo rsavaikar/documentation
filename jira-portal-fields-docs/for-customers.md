@@ -64,4 +64,4 @@ You see the same requests as in the portal's own Requests list: your own, those 
 
 ---
 
-[Troubleshooting](./troubleshooting.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Troubleshooting](./troubleshooting.html) · [Privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) · [End-user terms](./end-user-terms.html)

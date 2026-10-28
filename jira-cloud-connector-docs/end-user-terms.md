@@ -24,11 +24,11 @@ We grant you a free, non-exclusive, non-transferable licence to install and use 
 
 ## 3. Data
 
-The [privacy policy](./privacy-policy.html) describes what data the app handles. Your Jira data stays yours. The app runs on Atlassian's Forge platform, and Atlassian's own terms apply to the platform.
+The [privacy policy](../privacy-policy.html#cloud-connector-for-jira) describes what data the app handles. Your Jira data stays yours. The app runs on Atlassian's Forge platform, and Atlassian's own terms apply to the platform.
 
 ## 4. Support and changes
 
-Support is provided by email at [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com), as described in the [Support SLA](./sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
+Support is provided by email at [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com), as described in the [Support SLA](../sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
 
 ## 5. No warranty
 
@@ -52,4 +52,4 @@ These terms are governed by the laws of India, and the courts of Pune, India hav
 
 ---
 
-[Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
+[Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#cloud-connector-for-jira)

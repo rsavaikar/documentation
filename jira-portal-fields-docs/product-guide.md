@@ -69,7 +69,7 @@ The only exception is a project setting, **Show all requests in this project to 
 | Safe error messages | Users see a plain message with a reference; details go to the app's logs only, with Jira's quoted names and values removed. |
 | No outside calls | The app has no servers of its own and calls nothing outside Atlassian. Stored data follows your site's data residency location. |
 
-See the [privacy policy](./privacy-policy.html) for details.
+See the [privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) for details.
 
 ## Permissions and requirements
 
@@ -125,4 +125,4 @@ We list these openly so you can judge fit before installing.
 
 ---
 
-[Troubleshooting](./troubleshooting.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Troubleshooting](./troubleshooting.html) · [Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) · [End-user terms](./end-user-terms.html)

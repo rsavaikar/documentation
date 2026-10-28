@@ -82,4 +82,4 @@ Issues already linked are left alone.
 
 ---
 
-[Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#cloud-connector-for-jira) · [End-user terms](./end-user-terms.html)

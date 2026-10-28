@@ -90,7 +90,7 @@ Only issues in a connected project leave your site, and only to the one partner 
 | No personal data in logs | Operational logs contain issue keys, ids and error messages, never people's names or file names. |
 | Disconnect any time | Disconnecting tells the partner and stops all exchange immediately. |
 
-**Where data lives:** on Atlassian's Forge platform only. Settings and issue links are stored in the app's Forge storage on each site; there are no third-party servers. Because issue content is sent to the partner's site, the app is not eligible for Atlassian's "Runs on Atlassian" badge. See the [privacy policy](./privacy-policy.html) for details.
+**Where data lives:** on Atlassian's Forge platform only. Settings and issue links are stored in the app's Forge storage on each site; there are no third-party servers. Because issue content is sent to the partner's site, the app is not eligible for Atlassian's "Runs on Atlassian" badge. See the [privacy policy](../privacy-policy.html#cloud-connector-for-jira) for details.
 
 ## Permissions and requirements
 
@@ -154,4 +154,4 @@ We list these openly so you can judge fit before installing.
 
 ---
 
-[Troubleshooting](./troubleshooting.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Troubleshooting](./troubleshooting.html) · [Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#cloud-connector-for-jira) · [End-user terms](./end-user-terms.html)

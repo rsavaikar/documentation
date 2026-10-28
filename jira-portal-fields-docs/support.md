@@ -9,7 +9,7 @@ title: Support
 
 *Last updated: 28 October 2026 · Rahul Savaikar*
 
-Email [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com). Support hours and response times are described in the [Support SLA](./sla.html). Many questions are answered in [Troubleshooting](./troubleshooting.html).
+Email [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com). Support hours and response times are described in the [Support SLA](../sla.html). Many questions are answered in [Troubleshooting](./troubleshooting.html).
 
 To help us help you quickly, include:
 
@@ -25,4 +25,4 @@ Please don't send exports or screenshots that contain confidential request data.
 
 ---
 
-[Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) · [End-user terms](./end-user-terms.html)

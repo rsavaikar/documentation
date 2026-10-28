@@ -21,6 +21,6 @@ Connect Jira Cloud projects across organisations and synchronise issues, fields,
 ## Support and policies
 
 - [Support](./support.html) — Contact details and what to include when you ask for help.
-- [Support SLA](./sla.html) — Support hours, response targets and security fixes.
-- [Privacy policy](./privacy-policy.html) — Data processing, storage, sharing and security.
+- [Support SLA](../sla.html) — Support hours, response targets and security fixes.
+- [Privacy policy](../privacy-policy.html#cloud-connector-for-jira) — Data processing, storage, sharing and security.
 - [End-user terms](./end-user-terms.html) — Terms governing use of Cloud Connector for Jira.

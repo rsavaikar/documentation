@@ -95,4 +95,4 @@ The section shows only on the **Requests** page, not on request pages, the porta
 
 ---
 
-[Troubleshooting](./troubleshooting.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Troubleshooting](./troubleshooting.html) · [Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) · [End-user terms](./end-user-terms.html)

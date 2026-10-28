@@ -36,4 +36,4 @@ Most problems show up as a message on the connection's **Activity** tab. Find th
 
 ---
 
-[Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#cloud-connector-for-jira) · [End-user terms](./end-user-terms.html)

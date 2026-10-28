@@ -21,6 +21,6 @@ Show your customers the request fields they ask about, such as priority, SLA tim
 ## Support and policies
 
 - [Support](./support.html) — Contact details and what to include when you ask for help.
-- [Support SLA](./sla.html) — Support hours, response targets and security fixes.
-- [Privacy policy](./privacy-policy.html) — Data processing, storage and security.
+- [Support SLA](../sla.html) — Support hours, response targets and security fixes.
+- [Privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) — Data processing, storage and security.
 - [End-user terms](./end-user-terms.html) — Terms governing use of Portal Fields for JSM Cloud.

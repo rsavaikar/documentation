@@ -55,4 +55,4 @@ For agents and administrators, the report may show the Jira status name rather t
 
 ---
 
-[Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+[Support](./support.html) · [Support SLA](../sla.html) · [Privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) · [End-user terms](./end-user-terms.html)
