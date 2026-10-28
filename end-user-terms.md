@@ -3,7 +3,7 @@ layout: default
 title: End-user terms
 ---
 
-Last updated: 28 October 2026
+Oct 28, 2026 · @Rahul Savaikar
 
 [Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
 
