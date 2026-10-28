@@ -8,6 +8,7 @@ Source of the public documentation for Wolf Apps, published with GitHub Pages at
 | `_config.yml` | Site title, theme and plugins for all apps. GitHub Pages reads it only at the root. |
 | `index.md` | Landing page that lists the apps |
 | `jira-cloud-connector-docs/` | [Cloud Connector for Jira](https://rsavaikar.github.io/documentation/jira-cloud-connector-docs/) |
+| `jira-portal-fields-docs/` | [Portal Fields for JSM Cloud](https://rsavaikar.github.io/documentation/jira-portal-fields-docs/) |
 
 ## Adding an app
 
