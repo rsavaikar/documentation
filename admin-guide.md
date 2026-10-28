@@ -11,7 +11,12 @@ Oct 28, 2026 · @Rahul Savaikar
 
 This guide is for the Jira administrators who set up Jira Cloud Connector on their site. Each partner needs the same steps on its own site; plan about 15 minutes with the partner's admin. 
 
-## **1. Install and pair** 
+## **1. Install and pair**
+
+<p>
+  <a href="./install.html" style="display: inline-block; padding: 12px 20px; background-color: #0052cc; color: #ffffff; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 6px;">Install Jira Cloud Connector</a>
+</p>
+ 
 
 1. [**Install Jira Cloud Connector**](./install.html) on your Jira Cloud site. Sign in with the Atlassian account that administers your site, select the site, review the requested permissions, and complete the installation. Your partner must also install the app on their site. 
 
