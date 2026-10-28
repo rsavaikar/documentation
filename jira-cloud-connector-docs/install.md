@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /install.html
 title: Install Cloud Connector for Jira
 ---
 

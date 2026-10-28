@@ -1,0 +1,12 @@
+title: Wolf Apps documentation
+description: Guides, policies and support for Wolf Apps
+theme: jekyll-theme-minimal
+
+# GitHub Pages reads this file only at the repository root, so it applies to every app.
+# Each app's pages live in their own folder (for example jira-cloud-connector-docs/);
+# redirect_from in a page's front matter keeps older URLs working.
+plugins:
+  - jekyll-redirect-from
+
+github:
+  is_project_page: false

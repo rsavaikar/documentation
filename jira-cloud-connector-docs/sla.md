@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /sla.html
 title: Support SLA
 ---
 
@@ -14,7 +15,7 @@ This statement describes the support you can expect for **Cloud Connector for Ji
 ## How to get support
 
 - **Email:** [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com)
-- **Documentation and troubleshooting:** [rsavaikar.github.io/documentation](https://rsavaikar.github.io/documentation/)
+- **Documentation and troubleshooting:** [rsavaikar.github.io/documentation/jira-cloud-connector-docs](https://rsavaikar.github.io/documentation/jira-cloud-connector-docs/)
 
 Please include your Jira site address, the connection name, the issue keys involved and the exact message from the connection's **Activity** tab. Never send pairing codes or confidential attachments.
 

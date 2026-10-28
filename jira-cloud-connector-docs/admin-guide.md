@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /admin-guide.html
 title: Admin guide
 ---
 

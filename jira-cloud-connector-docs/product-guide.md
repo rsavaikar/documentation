@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /product-guide.html
 title: Product guide
 ---
 

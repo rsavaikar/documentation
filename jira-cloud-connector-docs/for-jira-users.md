@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /for-jira-users.html
 title: For Jira users
 ---
 
