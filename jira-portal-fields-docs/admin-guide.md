@@ -24,6 +24,7 @@ The app then adds two settings pages: one for defaults across all projects, and 
 
 | Setting | What it does |
 | --- | --- |
+| Emergency: Turn off Portal Fields for JSM Cloud on all portals | Removes the section, report and charts from every portal at once, overriding every project's own settings. Use it in an incident; projects' settings are kept and apply again when you untick it and save. Off by default. |
 | Enable the request report on all service project portals by default | Switches the app on for every project that hasn't saved its own settings. Off by default. |
 | Allow CSV and Excel export by default | Shows the export buttons to customers. On by default. |
 | Default extra columns | Fields shown after the standard columns, for projects that use the defaults |
@@ -87,6 +88,7 @@ The section shows only on the **Requests** page, not on request pages, the porta
 ## 8. Run and maintain
 
 - **Turning a project off:** untick the first box and save. The section then disappears for that project's customers. Customers with requests in it see a note in the report that those requests aren't shown.
+- **Turning everything off at once:** in Jira settings → Apps → Portal Fields for JSM Cloud, tick **Turn off Portal Fields for JSM Cloud on all portals** and save. This overrides every project; untick it and save to restore them as they were.
 - **Updates** are installed by Atlassian automatically. If an update needs new permissions, a Jira administrator approves it under **Apps → Manage apps**.
 - **Customers' column layouts** are saved per account. Customers can reset their own layout; layouts of closed Atlassian accounts are erased automatically.
 - **Uninstalling** under **Apps → Manage apps** removes all of the app's settings and stored layouts from your site.
