@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Support SLA
+title: Support SLA – Cloud Connector for Jira
 ---
 
 Oct 28, 2026 · @Rahul Savaikar
