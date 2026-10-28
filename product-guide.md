@@ -3,7 +3,7 @@ layout: default
 title: Product guide
 ---
 
-[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For Jira users](./for-jira-users.html) · [Troubleshooting](./troubleshooting.html) · [Support](./support.html)
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For Jira users](./for-jira-users.html) · [Troubleshooting](./troubleshooting.html) · [Technical reference](./technical-reference.html) · [Support](./support.html)
 
 # Cloud Connector for Jira – Product guide
 

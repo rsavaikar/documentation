@@ -17,6 +17,7 @@ Connect Jira Cloud projects across organisations and synchronise issues, fields,
 - [Admin guide](./admin-guide.html) — Installation, pairing, configuration and maintenance.
 - [For Jira users](./for-jira-users.html) — Everyday use and the Partner sync panel.
 - [Troubleshooting](./troubleshooting.html) — Common messages, synchronisation problems and solutions.
+- [Technical reference](./technical-reference.html) — Architecture, protocol, data storage, security and development details.
 
 ## Support and policies
 
@@ -24,7 +25,3 @@ Connect Jira Cloud projects across organisations and synchronise issues, fields,
 - [Support SLA](./sla.html) — Support hours, response targets and security fixes.
 - [Privacy policy](./privacy-policy.html) — Data processing, storage, sharing and security.
 - [End-user terms](./end-user-terms.html) — Terms governing use of Cloud Connector for Jira.
-
-## Technical reference
-
-Architecture, protocol and storage details are in the [technical reference on GitHub](https://github.com/rsavaikar/documentation/blob/main/README.md).
