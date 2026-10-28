@@ -17,7 +17,6 @@ Connect Jira Cloud projects across organisations and synchronise issues, fields,
 - [Admin guide](./admin-guide.html) — Installation, pairing, configuration and maintenance.
 - [For Jira users](./for-jira-users.html) — Everyday use and the Partner sync panel.
 - [Troubleshooting](./troubleshooting.html) — Common messages, synchronisation problems and solutions.
-- [Technical reference](./technical-reference.html) — Architecture, protocol, data storage, security and development details.
 
 ## Support and policies
 
