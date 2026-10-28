@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Documentation
+title: Jira Cloud Connector Documentation
 ---
 
-# Documentation
+![Jira Cloud Connector](./assets/images/jira-cloud-connector.jpg)
 
-Welcome to my documentation website.
+# Jira Cloud Connector Documentation
 
-Browse the guides below or download the available documents.
+Guides and reference information for installing, configuring, and using Jira Cloud Connector.
 
-## Online guides
-
-- [Getting started](./getting-started.html)
-
-## Downloadable documents
-
-Documents will be added here shortly.
+- [Product guide](./product-guide.html)
+- [Admin guide](./admin-guide.html)
+- [For Jira users](./for-jira-users.html)
+- [Troubleshooting](./troubleshooting.html)
+- [Support](./support.html)
+- [Privacy policy](./privacy-policy.html)
+- [End-user terms](./end-user-terms.html)

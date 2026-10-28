@@ -1,3 +1,10 @@
+---
+layout: default
+title: For Jira users
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **For Jira users** 
 
 If your project is connected to a partner, you keep working in Jira as usual: the connector copies your changes to the partner's linked issue, and theirs to yours, usually within a minute. 
@@ -30,5 +37,8 @@ If you can edit the issue, you also see a button:
 
 ## **What stays private** 
 
-Comments you restrict to a group or role, internal notes, and issues with a security level are **never** sent to the partner. Everything else in a connected project may be shared, so keep internal discussion in restricted comments or internal notes. 
+Comments you restrict to a group or role, internal notes, and issues with a security level are **never** sent to the partner. Everything else in a connected project may be shared, so keep internal discussion in restricted comments or internal notes.
 
+See [Troubleshooting](./troubleshooting.html).
+
+See also: [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)

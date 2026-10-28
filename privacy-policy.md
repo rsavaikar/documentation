@@ -1,3 +1,10 @@
+---
+layout: default
+title: Privacy policy
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **Privacy policy – Jira Cloud Connector** 
 
 Jira Cloud Connector ("the app") is a free app for Atlassian Jira Cloud, built on Atlassian Forge and published by Rahul Savaikar ("we"). It keeps issues in a Jira project on your site in sync with a project on a partner's Jira site that your administrator pairs it with. This policy explains what data the app handles, where it goes and how long it is kept. 
@@ -56,5 +63,6 @@ Messages between the two sites are sent over HTTPS and signed with a secret uniq
 
 ## **Changes and contact** 
 
-We will post changes to this policy on this page with a new effective date. Questions or requests: <u>rahul.savaikar@gmail.com.</u> 
+We will post changes to this policy on this page with a new effective date. Questions or requests: <u>rahul.savaikar@gmail.com.</u>
 
+See also: [End-user terms](./end-user-terms.html)

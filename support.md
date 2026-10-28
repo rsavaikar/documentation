@@ -1,3 +1,10 @@
+---
+layout: default
+title: Support
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **Support** 
 
 Email rahul.savaikar@gmail.com. Support for this free app is best effort. 
@@ -16,5 +23,7 @@ Please don't send pairing codes or attachments with confidential data.
 
 **Security issues:** report them to the same address with "Security" in the subject. 
 
-See also: Privacy policy · End-user terms 
+See also: [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
+
+See [Troubleshooting](./troubleshooting.html).
 

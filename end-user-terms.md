@@ -1,3 +1,10 @@
+---
+layout: default
+title: End-user terms
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **End-user terms – Jira Cloud Connector** 
 
 These terms apply when your organisation ("you") installs or uses Jira Cloud Connector ("the app"), published by Rahul Savaikar ("we"). By installing the app you accept them on behalf of your organisation. 
@@ -16,7 +23,7 @@ We grant you a free, non-exclusive, non-transferable licence to install and use 
 
 ## **3. Data** 
 
-The privacy policy describes what data the app handles. Your Jira data stays yours. The app runs on Atlassian's Forge platform, and Atlassian's own terms apply to the platform. 
+The [privacy policy](./privacy-policy.html) describes what data the app handles. Your Jira data stays yours. The app runs on Atlassian's Forge platform, and Atlassian's own terms apply to the platform. 
 
 ## **4. Support and changes** 
 
@@ -42,5 +49,6 @@ These terms are governed by the laws of [country], and the courts of [city, coun
 
 ## **Contact** 
 
-<u>rahul.savaikar@gmail.com</u> 
+<u>rahul.savaikar@gmail.com</u>
 
+See also: [Privacy policy](./privacy-policy.html)

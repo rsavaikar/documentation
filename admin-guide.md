@@ -1,3 +1,10 @@
+---
+layout: default
+title: Admin guide
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **Jira Cloud Connector – Admin guide** 
 
 This guide is for the Jira administrators who set up Jira Cloud Connector on their site. Each partner needs the same steps on its own site; plan about 15 minutes with the partner's admin. 
@@ -67,7 +74,7 @@ Issues already linked are left alone.
 
 ## **4. Run and maintain** 
 
-- **Activity tab:** the latest 30 events of the connection, kept for 30 days, including warnings such as skipped values or missing transitions. See Troubleshooting for what they mean. 
+- **Activity tab:** the latest 30 events of the connection, kept for 30 days, including warnings such as skipped values or missing transitions. See [Troubleshooting](./troubleshooting.html) for what they mean. 
 
 - **Failed changes:** issues whose change the partner never received are listed above the activity log with the last error. **Retry** sends the whole issue again; temporary problems, such as the partner being down, are retried automatically every hour for a day. 
 
@@ -77,5 +84,6 @@ Issues already linked are left alone.
 
 - **Disconnect** stops all exchange immediately and tells the partner. Issue links are kept, so pairing again resumes the same issues. **Delete** removes the connection and its stored data. 
 
-- **Uninstalling** the app tells paired partners and removes its stored data from your site. 
+- **Uninstalling** the app tells paired partners and removes its stored data from your site.
 
+See also: [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)

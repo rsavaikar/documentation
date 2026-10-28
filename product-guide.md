@@ -1,3 +1,10 @@
+---
+layout: default
+title: Product guide
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **Jira Cloud Connector – Product guide** 
 
 Oct 28, 2026 · @Rahul Savaikar 
@@ -182,5 +189,8 @@ We list these openly so customers can judge fit before installing.
 
 **What about issues created before we connected?** Bring them over with **Sync existing issues** , choosing them with JQL. 
 
-**How do we stop syncing?** Click **Disconnect** . The partner is told immediately, issue links are kept, and pairing again resumes where you left off. 
+**How do we stop syncing?** Click **Disconnect** . The partner is told immediately, issue links are kept, and pairing again resumes where you left off.
 
+See [Troubleshooting](./troubleshooting.html).
+
+See also: [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)

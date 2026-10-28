@@ -1,3 +1,10 @@
+---
+layout: default
+title: Troubleshooting
+---
+
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+
 # **Troubleshooting** 
 
 Most problems show up as a message on the connection's **Activity** tab. Find the message below. 
@@ -24,5 +31,6 @@ Most problems show up as a message on the connection's **Activity** tab. Find th
 
 **A change didn't arrive?** Look under **Activity → Failed changes** and click **Retry** , or use **Resync now** in the 
 
-issue's panel. 
+issue's panel.
 
+See also: [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
