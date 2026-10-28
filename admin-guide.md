@@ -13,7 +13,7 @@ This guide is for the Jira administrators who set up Jira Cloud Connector on the
 
 ## **1. Install and pair** 
 
-1. **Install** Jira Cloud Connector from the Atlassian Marketplace on your Jira Cloud site and approve its permissions. Your partner installs it on their site. 
+1. [**Install Jira Cloud Connector**](./install.html) on your Jira Cloud site. Sign in with the Atlassian account that administers your site, select the site, review the requested permissions, and complete the installation. Your partner must also install the app on their site. 
 
 2. **Open the admin page:** Jira settings → Apps → **Cloud Connector** . 
 
