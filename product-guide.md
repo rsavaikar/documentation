@@ -17,7 +17,7 @@ Jira Cloud Connector keeps one project on your Jira Cloud site in sync with one 
 |---|---|
 |App name|Jira Cloud Connector|
 |Tagline|Sync issues between your Jira Cloud and your customers' – securely, both ways|
-|Summary|Connect a project on your Jira Cloud site with a project on a partner's or<br>customer's site. Issues, fields, statuses, comments and files stay in sync in both<br>directions, and no credentials are ever shared.|
+|Summary|Connect a project on your Jira Cloud site with a project on a partner's or customer's site. Issues, fields, statuses, comments and files stay in sync in both directions, and no credentials are ever shared.|
 |Product|Jira Cloud (Jira Software and Jira Service Management projects)|
 |Hosting|Built on Atlassian Forge; no servers of its own|
 |Categories|Integrations; IT & helpdesk; Project management|
