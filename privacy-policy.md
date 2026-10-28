@@ -6,7 +6,7 @@ redirect_from:
   - /jira-portal-fields-docs/privacy-policy.html
 ---
 
-[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
+[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
 # Privacy policy – Wolf Apps
 

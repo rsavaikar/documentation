@@ -1,6 +1,5 @@
 ---
 layout: default
-redirect_from: /support.html
 title: Support
 ---
 
