@@ -45,7 +45,7 @@ You can stop using the app at any time by disconnecting its connections and unin
 
 ## **8. General** 
 
-These terms are governed by the laws of [country], and the courts of [city, country] have jurisdiction. If a provision is found unenforceable, the rest remains in effect. We will post changes to these terms on this page with a new effective date; continued use after a change means you accept it. 
+These terms are governed by the laws of India, and the courts of Pune, India have jurisdiction. If a provision is found unenforceable, the rest remains in effect. We will post changes to these terms on this page with a new effective date; continued use after a change means you accept it. 
 
 ## **Contact** 
 
