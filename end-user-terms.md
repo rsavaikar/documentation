@@ -3,6 +3,8 @@ layout: default
 title: End-user terms
 ---
 
+Last updated: 28 October 2026
+
 [Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
 
 # **End-user terms – Jira Cloud Connector** 
