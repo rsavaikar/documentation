@@ -37,9 +37,7 @@ The app is provided "as is" and "as available", without warranties of any kind, 
 
 ## **6. Limitation of liability** 
 
-To the extent the law allows, we are not liable for any indirect, incidental, special or consequential damages, or for loss of data, profits or business, arising from the use of the app. Because the app is free, 
-
-our total liability for any claim is limited to EUR 100. Nothing in these terms limits liability that cannot be limited by law. 
+To the extent the law allows, we are not liable for any indirect, incidental, special or consequential damages, or for loss of data, profits or business, arising from the use of the app. Because the app is free, our total liability for any claim is limited to USD 10,000. Nothing in these terms limits liability that cannot be limited by law.
 
 ## **7. Ending use** 
 
