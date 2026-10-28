@@ -2,6 +2,7 @@
 layout: default
 title: Jira Cloud Connector Documentation
 ---
+Oct 28, 2026 · @Rahul Savaikar
 
 ![Jira Cloud Connector — sync issues securely between Jira Cloud sites](./assets/images/jira-cloud-connector.jpg)
 
