@@ -3,7 +3,8 @@ layout: default
 title: Support SLA
 ---
 
-Oct 28, 2026 · @Rahul Savaikar
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For Jira users](./for-jira-users.html) · [Troubleshooting](./troubleshooting.html) · [Support](./support.html)
+
 # Support SLA – Cloud Connector for Jira
 
 *Last updated: 28 October 2026 · Rahul Savaikar*
@@ -56,4 +57,8 @@ Cloud Connector for Jira runs entirely on Atlassian's Forge platform. Its availa
 
 ## Changes
 
-We may update this statement; the date at the top shows the latest version. The [End-user terms](https://rsavaikar.github.io/documentation/end-user-terms.html) continue to apply.
+We may update this statement; the date at the top shows the latest version. The [End-user terms](./end-user-terms.html) continue to apply.
+
+---
+
+[Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)

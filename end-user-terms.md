@@ -3,52 +3,52 @@ layout: default
 title: End-user terms
 ---
 
-Oct 28, 2026 · @Rahul Savaikar
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For Jira users](./for-jira-users.html) · [Troubleshooting](./troubleshooting.html) · [Support](./support.html)
 
-[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+# End-user terms – Cloud Connector for Jira
 
-# **End-user terms – Jira Cloud Connector** 
+*Last updated: 28 October 2026 · Rahul Savaikar*
 
-These terms apply when your organisation ("you") installs or uses Jira Cloud Connector ("the app"), published by Rahul Savaikar ("we"). By installing the app you accept them on behalf of your organisation. 
+These terms apply when your organisation ("you") installs or uses Cloud Connector for Jira ("the app"), published by Rahul Savaikar ("we"). By installing the app you accept them on behalf of your organisation.
 
-## **1. Licence** 
+## 1. Licence
 
-We grant you a free, non-exclusive, non-transferable licence to install and use the app on your Atlassian Jira Cloud sites for your internal business purposes, for as long as these terms apply. We may offer paid editions in future; any change in price will be announced in advance and will not apply to the free edition already installed without your consent. 
+We grant you a free, non-exclusive, non-transferable licence to install and use the app on your Atlassian Jira Cloud sites for your internal business purposes, for as long as these terms apply. We may offer paid editions in future; any change in price will be announced in advance and will not apply to the free edition already installed without your consent.
 
-## **2. Your responsibilities** 
+## 2. Your responsibilities
 
-- You decide which projects, fields, comments and files are shared, and with which partner site. You are responsible for having the right to share that data with the partner, including under any agreement with them and under data protection law. 
+- You decide which projects, fields, comments and files are shared, and with which partner site. You are responsible for having the right to share that data with the partner, including under any agreement with them and under data protection law.
+- You keep the pairing codes your administrators create confidential and send them only to the intended partner's administrator.
+- You use the app in line with [Atlassian's Acceptable Use Policy](https://www.atlassian.com/legal/acceptable-use-policy) and these terms.
 
-- You keep the pairing codes your administrators create confidential and send them only to the intended partner's administrator. 
+## 3. Data
 
-- You use the app in line with Atlassian's Acceptable Use Policy and these terms. 
+The [privacy policy](./privacy-policy.html) describes what data the app handles. Your Jira data stays yours. The app runs on Atlassian's Forge platform, and Atlassian's own terms apply to the platform.
 
-## **3. Data** 
+## 4. Support and changes
 
-The [privacy policy](./privacy-policy.html) describes what data the app handles. Your Jira data stays yours. The app runs on Atlassian's Forge platform, and Atlassian's own terms apply to the platform. 
+Support is provided by email at [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com), as described in the [Support SLA](./sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
 
-## **4. Support and changes** 
+## 5. No warranty
 
-Support is offered on a best-effort basis by email at rahul.savaikar@gmail.com. We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing. 
+The app is provided "as is" and "as available", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not guarantee that synchronisation is uninterrupted, complete or error-free. Keep your own records of important data.
 
-## **5. No warranty** 
-
-The app is provided "as is" and "as available", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not guarantee that synchronisation is uninterrupted, complete or error-free. Keep your own records of important data. 
-
-## **6. Limitation of liability** 
+## 6. Limitation of liability
 
 To the extent the law allows, we are not liable for any indirect, incidental, special or consequential damages, or for loss of data, profits or business, arising from the use of the app. Because the app is free, our total liability for any claim is limited to INR 20,000. Nothing in these terms limits liability that cannot be limited by law.
 
-## **7. Ending use** 
+## 7. Ending use
 
-You can stop using the app at any time by disconnecting its connections and uninstalling it. We may end these terms if you breach them. Sections 5, 6 and 8 continue to apply after the terms end. 
+You can stop using the app at any time by disconnecting its connections and uninstalling it. We may end these terms if you breach them. Sections 5, 6 and 8 continue to apply after the terms end.
 
-## **8. General** 
+## 8. General
 
-These terms are governed by the laws of India, and the courts of Pune, India have jurisdiction. If a provision is found unenforceable, the rest remains in effect. We will post changes to these terms on this page with a new effective date; continued use after a change means you accept it. 
+These terms are governed by the laws of India, and the courts of Pune, India have jurisdiction. If a provision is found unenforceable, the rest remains in effect. We will post changes to these terms on this page with a new "Last updated" date; continued use after a change means you accept it.
 
-## **Contact** 
+## Contact
 
-<u>rahul.savaikar@gmail.com</u>
+[rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com)
 
-See also: [Privacy policy](./privacy-policy.html)
+---
+
+[Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)

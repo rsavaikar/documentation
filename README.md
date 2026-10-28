@@ -1,4 +1,4 @@
-# Jira Cloud Connector
+# Cloud Connector for Jira
 
 A [Forge](https://developer.atlassian.com/platform/forge/) app that connects **Jira Cloud sites** to each other, for example your site and a customer's, and keeps issues, fields, statuses and comments in sync between one project on each side.
 
@@ -6,7 +6,7 @@ The same app is installed on every participating site. Two installations **pair*
 
 A site can be paired with **several partners at once**. Each pairing is an isolated *connection* with its own project, settings and secret.
 
-![Jira Cloud Connector](./assets/images/jira-cloud-connector.jpg)
+![Cloud Connector for Jira](./assets/images/cloud-connector-for-jira.png)
 
 ---
 
@@ -57,13 +57,13 @@ sequenceDiagram
     participant A as Connector on site A
     participant B as Connector on site B
     participant JB as Jira on site B
-    UA->>A: creates CCTEST-6 (Story)
+    UA->>A: creates SUP-6 (Story)
     A->>A: trigger → queue → worker
     A->>B: issue.created (signed, connection = B's id)
     B->>B: verify signature, map "story" → Story
-    B->>JB: create PART-4 as the app
-    B-->>A: { issue: PART-4 }
-    A->>A: store link CCTEST-6 ↔ PART-4, add web links both ways
+    B->>JB: create ENG-4 as the app
+    B-->>A: { issue: ENG-4 }
+    A->>A: store link SUP-6 ↔ ENG-4, add web links both ways
 ```
 
 ---
@@ -93,7 +93,7 @@ Each case is logged under **Activity** on the sending site.
 
 **Not synced yet:** user, cascading-select, version and component fields; attachment deletions, and images embedded in descriptions (they show a placeholder); comment edits and deletes; assignee and reporter; changing the issue type of an already-linked issue. Deleting a synced issue doesn't delete the partner's copy; it unlinks it (see [Reliability](#reliability-queue-retries-idempotency)). See [Limitations and roadmap](#limitations-and-roadmap).
 
-**Who appears as the author?** Issues and comments created by the connector show the app, **Jira Cloud Connector**, as reporter or author. The original author's name is kept in the comment's attribution line.
+**Who appears as the author?** Issues and comments created by the connector show the app, **Cloud Connector for Jira**, as reporter or author. The original author's name is kept in the comment's attribution line.
 
 ---
 
@@ -147,7 +147,7 @@ The installer asks you to approve these permissions:
 
 ### Install on a partner's site
 
-1. In the [developer console](https://developer.atlassian.com/console/myapps/), open **Jira Cloud Connector**, go to **Distribution** and enable sharing.
+1. In the [developer console](https://developer.atlassian.com/console/myapps/), open **Cloud Connector for Jira**, go to **Distribution** and enable sharing.
 2. Send the installation link to the partner's Jira admin. They install the app on their own site and approve the same permissions.
 3. The two sites don't need the same app version. Forge applies minor updates automatically, but a version that needs new permissions waits until each site's admin approves it (**Apps › Manage apps**). Until then the sites sync at the newer protocol both understand, and a newer feature (for example attachments) waits for the older side. See [Protocol versions](#protocol-versions).
 
@@ -339,6 +339,8 @@ Anything Jira restricts on your site stays there: comments limited to a group or
 | Pairing codes | Expire after 24 hours, can be cancelled, are replaced by a new code, and can be used once. |
 | Disconnect | Tells the partner, then deletes the secret. Further messages are refused with HTTP 403. |
 | Admin actions | Every admin-page action checks that the caller is a Jira administrator (the `ADMINISTER` permission), not only that Jira showed them the page. |
+| Issue panel | The panel checks, as the user, that they may view the issue (`BROWSE_PROJECTS`) before the app reads it; **Sync now** requires edit permission (`EDIT_ISSUES`). |
+| No personal data in logs | Forge's operational logs get issue keys, ids and error messages only; people's names and file names appear only in the admin's Activity tab, which is app storage. |
 | Per-connection isolation | See [Several partners and isolation](#several-partners-and-isolation) |
 | No echo loops | Changes made by the app don't fire its own triggers (`ignoreSelf`). |
 
@@ -357,8 +359,8 @@ The program requires that customer data never leaves the site the app is install
 
 ## Reliability: queue, retries, idempotency
 
-- **Queued work.** Triggers only enqueue jobs; the worker does the slow part, with a 120-second time limit. One job at a time per issue keeps creates and updates for the same issue in order.
-- **Retries.** If the partner is unreachable, rate-limited (HTTP 429), not ready yet (409, for example an update that arrives before the issue's create) or failing (5xx), or Jira itself rate-limits or fails, the job is queued again with a delay of 30s, 60s, 120s, 240s and 480s, so up to **5 retries** over about 15 minutes. After that the failure is logged under **Activity**.
+- **Queued work.** Triggers only enqueue jobs; the worker does the slow part, with up to 900 seconds per job (room for large files). One job at a time per issue keeps creates and updates for the same issue in order.
+- **Retries.** If the partner is unreachable, rate-limited (HTTP 429), not ready yet (409, for example an update that arrives before the issue's create) or failing (5xx), or Jira itself rate-limits or fails, the job is queued again with a delay of 30s, 60s, 120s, 240s and 480s, so up to **5 retries** over about 15 minutes. After that the change is listed under **Activity › Failed changes** (see below).
 - **Permanent failures aren't retried.** If the partner rejects a message for a reason that won't fix itself (for example an unmapped issue type, or Jira refusing a field), the receiver answers 422 and the sender logs it once.
 - **Failed changes are kept, not dropped.** A change that still fails after its retries, or fails for good, is recorded for its issue and listed under **Activity › Failed changes** with **Retry**. Retrying resyncs the whole issue (fields, status, files, public comments), so it also covers earlier changes that were lost. Failures that may pass on their own (the partner was down, rate limits, 5xx) are retried automatically **every hour, for up to a day** (scheduled trigger `retry-failures`).
 - **Deleted issues.** When a synced issue is deleted, its records here are removed and the partner is told (protocol v6). The partner's copy is not deleted: it is unlinked, gets a comment saying why, and stays unlinked, so editing it never creates a new copy here.
@@ -485,10 +487,10 @@ forge variables unset -e development CONNECTOR_FAULT_INJECTION
 
 ### Testing an older partner
 
-A second development-only variable makes one connection behave like an older connector, on both its sending and its receiving side. The value is a comma-separated list of `connectionId:version` (the id is in the connection's storage keys and in `forge logs` lines such as `[c9528d777b6]`):
+A second development-only variable makes one connection behave like an older connector, on both its sending and its receiving side. The value is a comma-separated list of `connectionId:version` (the id is in the connection's storage keys and in `forge logs` lines such as `[c1a2b3c4d5e]`):
 
 ```bash
-forge variables set -e development CONNECTOR_SIMULATE_PROTOCOL c9528d777b6:3
+forge variables set -e development CONNECTOR_SIMULATE_PROTOCOL c1a2b3c4d5e:3
 ```
 
 Deploy, then on the partner connection: **Test connection** shows the "older connector" warning, issues and comments still sync, and a file added to an issue is held back with "Not sending files of …". Remove the variable and deploy again; the next change to that issue sends the file. **Never set it in production.**
@@ -539,7 +541,7 @@ Pairing codes have their own version: v2 adds the issuing connection's id.
   "id": "6f1c…",
   "type": "issue.updated",
   "sentAt": "2026-10-27T17:34:42.000Z",
-  "payload": { "source": { "id": "10042", "key": "PART-4" }, "fields": {}, "statusName": null, "mapped": { "priority": "Highest" } }
+  "payload": { "source": { "id": "10042", "key": "ENG-4" }, "fields": {}, "statusName": null, "mapped": { "priority": "Highest" } }
 }
 ```
 
@@ -663,4 +665,4 @@ The name comes from the app name in the developer console. Renaming it there upd
 No; see [Runs on Atlassian](#runs-on-atlassian).
 
 **What happens if the partner site is down?**
-Changes are retried with increasing delays for about 15 minutes in total, then logged under **Activity**. Edit the issue again once the partner is back to resend it.
+Changes are retried with increasing delays for about 15 minutes. Anything still undelivered is listed under **Activity › Failed changes**, retried automatically every hour for up to a day, and can be retried by hand with **Retry**.

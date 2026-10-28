@@ -2,29 +2,26 @@
 layout: default
 title: Support
 ---
-Oct 28, 2026 · @Rahul Savaikar
 
-[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For Jira users](./for-jira-users.html) · [Troubleshooting](./troubleshooting.html) · [Support](./support.html)
 
-# **Support** 
+# Support
 
-Email rahul.savaikar@gmail.com. Support for this free app is best effort. 
+*Last updated: 28 October 2026 · Rahul Savaikar*
 
-To help us help you quickly, include: 
+Email [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com). Support hours and response times are described in the [Support SLA](./sla.html). Many questions are answered in [Troubleshooting](./troubleshooting.html).
 
-- your Jira site address (for example <mark>yourcompany.atlassian.net</mark> ) and the partner's site; 
+To help us help you quickly, include:
 
-- the connection's name and the issue keys involved; 
+- your Jira site address (for example `yourcompany.atlassian.net`) and the partner's site;
+- the connection's name and the issue keys involved;
+- the exact message from the connection's **Activity** tab, or a screenshot of the issue's **Partner sync** panel;
+- what you expected to happen and what happened instead.
 
-- the exact message from the connection's **Activity** tab, or a screenshot of the issue's **Partner sync** panel; 
+Please don't send pairing codes or attachments with confidential data.
 
-- what you expected to happen and what happened instead. 
+**Security issues:** report them to the same address with "Security" in the subject.
 
-Please don't send pairing codes or attachments with confidential data. 
+---
 
-**Security issues:** report them to the same address with "Security" in the subject. 
-
-See also: [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
-
-See [Troubleshooting](./troubleshooting.html).
-
+[Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html) · [End-user terms](./end-user-terms.html)
