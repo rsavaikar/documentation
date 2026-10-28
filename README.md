@@ -6,7 +6,7 @@ The same app is installed on every participating site. Two installations **pair*
 
 A site can be paired with **several partners at once**. Each pairing is an isolated *connection* with its own project, settings and secret.
 
-<p align="center"><img src="assets/avatar/avatar-144.png" alt="Jira Cloud Connector" width="96"></p>
+![Jira Cloud Connector](./assets/images/jira-cloud-connector.jpg)
 
 ---
 
