@@ -2,7 +2,9 @@
 layout: default
 title: Admin guide
 ---
+
 Oct 28, 2026 · @Rahul Savaikar
+
 [Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [Support](./support.html)
 
 # **Jira Cloud Connector – Admin guide** 
