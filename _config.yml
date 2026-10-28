@@ -1,3 +1,6 @@
 title: Jira Cloud Connector Documentation
 description: Guides, documents, and reference materials
 theme: jekyll-theme-minimal
+
+github:
+  is_project_page: false
