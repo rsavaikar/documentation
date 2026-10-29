@@ -36,9 +36,9 @@ Issue content is sent only to the partner site your administrator paired with, a
 | Attached files (only if your administrator switches attachments on) | Copy files to the partner's issue | The paired partner site | Pieces of a file in transfer: up to 1 day |
 | Connection settings, mappings and the pairing secret | Run the connection | App storage on your site (the secret in encrypted storage) | Until the connection is deleted or the app is uninstalled |
 | Issue links (issue ids and keys on both sites) and each issue's last sync result | Know which issues belong together; show the issue panel | App storage on your site | Until the issue or connection is deleted, or the app is uninstalled |
-| Activity log: issue keys, file names, comment authors' display names, error messages | Let your administrators see what happened | App storage on your site | 30 days |
+| Activity log: issue keys, file names, comment authors' display names, error messages, including Jira's reason when it rejects a change | Let your administrators see what happened | App storage on your site, shown only to your Jira administrators | 30 days |
 | Ids of processed messages, with their result | Avoid duplicates when a message is retried | App storage on your site | 2 days |
-| Operational log lines: issue keys, ids and error messages, never people's names or file names | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
+| Operational log lines: issue keys, ids, what failed and the status code; never people's names, file names, queries or Jira's error text | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
 
 The app never sends comments restricted to a group or role, internal notes in Jira Service Management projects, or issues with an issue security level. It does not process user account details.
 
@@ -46,7 +46,7 @@ The app never sends comments restricted to a group or role, internal notes in Ji
 
 **Your choices:** administrators decide which project, issue types, fields, comments and files are synced, per partner. **Disconnect** stops all exchange with a partner at once. Deleting a connection removes its stored settings and links.
 
-**Security:** messages between the two sites are sent over HTTPS and signed with a secret unique to each pairing. Pairing secrets are kept in Forge's encrypted storage. Only Jira administrators can change the app's settings, and the issue panel shows information only to users who may view the issue.
+**Security:** messages between the two sites are sent over HTTPS and signed with a secret unique to each pairing, and only to the partner's Cloud Connector address on Atlassian's Forge platform. When your Jira rejects a change from the partner, the partner learns only that it failed and the status code; the reason stays on your Activity tab. Pairing secrets are kept in Forge's encrypted storage. Only Jira administrators can change the app's settings, and the issue panel shows information only to users who may view the issue.
 
 ## Portal Fields for JSM Cloud
 
@@ -59,9 +59,9 @@ The app reads request data from Jira when someone opens the report and shows it 
 | Exports (CSV, Excel, PDF, PNG, JPG) | Let the user save the report or a chart | Created in the user's browser and saved to their device; not sent anywhere | On the user's device, under their organisation's control |
 | App settings: which projects use the app, chosen fields and charts, export and visibility options | Run the app as your administrators configured it | App storage on your site | Until changed, or the app is uninstalled |
 | Column layout: the user's Atlassian account ID, column order, hidden columns and when it was last changed | Keep each user's layout across browsers and devices | App storage on your site | While the app is installed; see below |
-| Operational log lines: an error reference, which part of the app failed, the status code and Jira's error message with quoted names and values removed; load times and counts | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
+| Operational log lines: an error reference, which part of the app failed and the status code, never Jira's error text; load times and counts | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
 
-**Who sees what:** your users see only requests that Jira already lets them see on the portal, and only the fields your administrators enabled. If a project administrator switches on "Show all requests", every customer who can open that project's portal sees all of its requests. This setting is off by default.
+**Who sees what:** your users see only requests that Jira already lets them see on the portal, and only the fields your administrators enabled. If a project administrator switches on "Show all requests", every customer who can open that project's portal sees all of its requests, with the reporter's name, except requests with an issue security level, which stay visible only to those Jira allows. This setting is off by default.
 
 **Personal data:** the column layouts are the only personal data the app stores. As Atlassian requires, the app reports the stored account IDs to Atlassian every week and erases the layouts of accounts that have been closed. Users can also remove their own layout at any time with **Reset to default columns**.
 

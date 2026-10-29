@@ -20,6 +20,7 @@ Most problems show up as a message on the connection's **Activity** tab. Find th
 | KEY has no request type | Choose a request type for that issue type on the **Issue types** tab. |
 | Skipped incoming issue: issue type "x" is not mapped | Map the shared key on the **Issue types** tab, or set a fallback type. |
 | Peer rejected … (403): Unknown or unpaired connection | The partner disconnected or deleted its connection. Pair again. |
+| Peer rejected … (422): Jira … failed (400). The partner's admin can see why on the Cloud Connector Activity tab | The partner's Jira refused the change, for example a field or transition it doesn't accept. Ask the partner's admin for the reason on their **Activity** tab. |
 | The partner disconnected this connection | Nothing syncs until you pair again; issue links are kept. |
 | Partner's connector speaks protocol vN (this site vM) | The two sites run different app versions. Sync continues; newer features wait until both have updated. |
 | Skipped file.pdf: over the 10 MB limit | Raise **Largest file to send or accept** on the **Project** tab, on both sites. |
@@ -27,6 +28,7 @@ Most problems show up as a message on the connection's **Activity** tab. Find th
 | Not sending comment …: it is an internal note | Working as intended: restricted comments stay on your site. |
 | Not syncing KEY: it has the security level "X" | Working as intended: issues with a security level never leave your site. |
 | Pairing code expired | Codes last 24 hours. Generate a new one. |
+| Pairing code has no valid peer URL | The code is incomplete or doesn't come from Cloud Connector. Ask the partner's admin to generate a new code and send it again, copied in full. |
 
 **Nothing syncs at all?** Check that both connections show **Paired**, that **Check contract** shows no missing keys, and that the issue's type is mapped and ticked (and carries the sync label, if you set one).
 
