@@ -5,20 +5,28 @@
       <stop offset="0" stop-color="#2D7FF9"/>
       <stop offset="1" stop-color="#0B4DB8"/>
     </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F6F9"/>
+      <stop offset="1" stop-color="#C3CBD6"/>
+    </linearGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <!-- Head -->
-  <polygon fill="#FFFFFF" points="146,104 210,178 256,166 302,178 366,104 384,252 334,334 256,404 178,334 128,252"/>
+  <!-- Head: tall ears, wide cheek ruff, long narrow muzzle -->
+  <polygon fill="url(#silver)" points="132,86 212,168 256,176 300,168 380,86 396,236 364,282 304,318 256,414 208,318 148,282 116,236"/>
   <!-- Inner ears -->
-  <polygon fill="#0B4DB8" points="160,138 200,186 174,208"/>
-  <polygon fill="#0B4DB8" points="352,138 312,186 338,208"/>
-  <!-- Face facets -->
-  <polygon fill="#D6E4FF" points="256,172 222,292 256,342 290,292"/>
-  <polygon fill="#EAF1FF" points="128,252 178,334 214,300"/>
-  <polygon fill="#EAF1FF" points="384,252 334,334 298,300"/>
+  <polygon fill="#5E6B7E" points="148,120 198,176 166,198"/>
+  <polygon fill="#5E6B7E" points="364,120 314,176 346,198"/>
+  <!-- Forehead and brow facets -->
+  <polygon fill="#AEB8C6" points="256,176 230,240 256,292 282,240"/>
+  <polygon fill="#D7DDE5" points="116,236 212,168 196,240"/>
+  <polygon fill="#D7DDE5" points="396,236 300,168 316,240"/>
+  <!-- White cheeks and muzzle -->
+  <polygon fill="#FFFFFF" points="116,236 148,282 208,318 182,262"/>
+  <polygon fill="#FFFFFF" points="396,236 364,282 304,318 330,262"/>
+  <polygon fill="#FFFFFF" points="208,318 256,292 304,318 256,414"/>
   <!-- Eyes -->
-  <polygon fill="#0B4DB8" points="192,250 238,262 212,280"/>
-  <polygon fill="#0B4DB8" points="320,250 274,262 300,280"/>
+  <polygon fill="#1D2B44" points="190,238 236,252 206,268"/>
+  <polygon fill="#1D2B44" points="322,238 276,252 306,268"/>
   <!-- Nose -->
-  <polygon fill="#0B4DB8" points="232,346 280,346 256,374"/>
+  <polygon fill="#1D2B44" points="238,384 274,384 256,408"/>
 </svg>
