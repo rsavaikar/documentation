@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Wolf Apps</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2D7FF9"/>
+      <stop offset="1" stop-color="#0B4DB8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- Head -->
+  <polygon fill="#FFFFFF" points="146,104 210,178 256,166 302,178 366,104 384,252 334,334 256,404 178,334 128,252"/>
+  <!-- Inner ears -->
+  <polygon fill="#0B4DB8" points="160,138 200,186 174,208"/>
+  <polygon fill="#0B4DB8" points="352,138 312,186 338,208"/>
+  <!-- Face facets -->
+  <polygon fill="#D6E4FF" points="256,172 222,292 256,342 290,292"/>
+  <polygon fill="#EAF1FF" points="128,252 178,334 214,300"/>
+  <polygon fill="#EAF1FF" points="384,252 334,334 298,300"/>
+  <!-- Eyes -->
+  <polygon fill="#0B4DB8" points="192,250 238,262 212,280"/>
+  <polygon fill="#0B4DB8" points="320,250 274,262 300,280"/>
+  <!-- Nose -->
+  <polygon fill="#0B4DB8" points="232,346 280,346 256,374"/>
+</svg>
