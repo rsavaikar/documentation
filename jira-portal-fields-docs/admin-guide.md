@@ -75,7 +75,7 @@ If no chart is ticked, the **Charts** button doesn't appear on the portal.
 | Option | What it does |
 | --- | --- |
 | Allow customers to export the report as CSV or Excel | Shows the export buttons in the report and the download buttons for charts |
-| Show all requests in this project to every customer who can open its portal | **Off by default.** When on, every customer of this project sees all of its requests, including other customers' and other organisations'. Turn it on only if that's intended. |
+| Show all requests in this project to every customer who can open its portal | **Off by default.** When on, every customer of this project sees all of its requests, including other customers' and other organisations', with the reporter's name. Requests with an issue security level are never added: customers see those only if Jira already lets them. Turn it on only if that's intended. |
 
 ## 7. Check on the portal
 

@@ -55,7 +55,7 @@ Typical uses:
 
 Customers see exactly the requests Jira lets them see on the portal: their own, those they take part in and those shared with their organisations. The app asks Jira as that customer, every time.
 
-The only exception is a project setting, **Show all requests in this project to every customer who can open its portal**. It's off by default; when a project administrator switches it on, every customer of that project sees all of its requests.
+The only exception is a project setting, **Show all requests in this project to every customer who can open its portal**. It's off by default; when a project administrator switches it on, every customer of that project sees all of its requests, with the reporter's name. Requests with an issue security level are never added this way: customers see those only if Jira already lets them.
 
 ## Security, privacy and data
 
@@ -66,7 +66,8 @@ The only exception is a project setting, **Show all requests in this project to 
 | Permission checks | Every settings change checks that the user is a Jira administrator or a project administrator. |
 | No data stored from requests | Request data is read when the report opens and not kept. The app stores only its settings and each user's column layout. |
 | Personal data reporting | Column layouts are linked to Atlassian account IDs, reported to Atlassian weekly; layouts of closed accounts are erased. |
-| Safe error messages | Users see a plain message with a reference; details go to the app's logs only, with Jira's quoted names and values removed. |
+| Safe error messages | Users see a plain message with a reference. The app's logs record which part failed and the status code, never Jira's error text, which can quote names and values. |
+| Safe exports | In CSV files, cells that a spreadsheet could run as a formula are written as plain text, including in spreadsheets that use `;` as the list separator. |
 | No outside calls | The app has no servers of its own and calls nothing outside Atlassian. Stored data follows your site's data residency location. |
 
 See the [privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) for details.
@@ -111,7 +112,7 @@ We list these openly so you can judge fit before installing.
 
 ## FAQ
 
-**Do customers see requests they couldn't see before?** No, unless an administrator switches on "Show all requests" for a project. Otherwise customers see exactly what Jira shows them on the portal.
+**Do customers see requests they couldn't see before?** No, unless an administrator switches on "Show all requests" for a project. Otherwise customers see exactly what Jira shows them on the portal. Even with that setting on, requests with an issue security level are never added.
 
 **Can customers see internal fields?** Only if an administrator adds them as columns. Choose only fields your customers may see; Assignee, for example, shows agents' names.
 

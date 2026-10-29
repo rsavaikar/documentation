@@ -87,7 +87,9 @@ Only issues in a connected project leave your site, and only to the one partner 
 | Short-lived pairing codes | Codes expire after 24 hours, work once and can be cancelled. |
 | Permission checks | Every admin action checks that the user is a Jira administrator; the issue panel checks that the user may view the issue, and "Sync now" that they may edit it. |
 | Isolation | Each partner connection has its own project, settings and secret; partners never see each other's issues. |
-| No personal data in logs | Operational logs contain issue keys, ids and error messages, never people's names or file names. |
+| No personal data in logs | Operational logs record issue keys, ids, what failed and the status code, never people's names, file names, queries or Jira's error text. Jira's reasons are shown only to your administrators on the Activity tab. |
+| Nothing extra to the partner | When your Jira rejects a change from the partner, the partner learns only that it failed and the status code. |
+| Pairing only with Cloud Connector | A pairing code is accepted only if it points to a Cloud Connector address on Atlassian's Forge platform. |
 | Disconnect any time | Disconnecting tells the partner and stops all exchange immediately. |
 
 **Where data lives:** on Atlassian's Forge platform only. Settings and issue links are stored in the app's Forge storage on each site; there are no third-party servers. Because issue content is sent to the partner's site, the app is not eligible for Atlassian's "Runs on Atlassian" badge. See the [privacy policy](../privacy-policy.html#cloud-connector-for-jira) for details.
