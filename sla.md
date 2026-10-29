@@ -6,16 +6,17 @@ redirect_from:
   - /jira-portal-fields-docs/sla.html
 ---
 
-[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
+[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
 # Support SLA – Wolf Apps
 
-*Last updated: 29 October 2026 · Rahul Savaikar*
+*Last updated: 30 October 2026 · Rahul Savaikar*
 
 This statement describes the support you can expect for the free Atlassian Cloud apps published by Rahul Savaikar ("we"):
 
 - [Cloud Connector for Jira](./jira-cloud-connector-docs/)
 - [Portal Fields for JSM Cloud](./jira-portal-fields-docs/)
+- [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/)
 
 It covers how to reach us, when we respond, and how we handle security issues. The same terms apply to every app; where an app differs, its section below says so.
 
@@ -75,9 +76,14 @@ Every app runs entirely on Atlassian's Forge platform. Its availability depends 
 - **Critical** includes the report or charts failing for all customers of a portal, and a customer seeing requests they shouldn't.
 - Not covered: which fields administrators choose to show customers.
 
+### KPI Dashboard Gadget
+
+- **Critical** includes the gadgets failing to load for all users of a site, and a viewer seeing tickets their Jira permissions don't allow.
+- Not covered: the gadgets' queries, field names and targets, which dashboard owners set, and differences between the gadgets' elapsed-time SLA figures and Jira's SLA calendars.
+
 ## Changes
 
-We may update this statement; the date at the top shows the latest version. Each app's end-user terms continue to apply: [Cloud Connector for Jira](./jira-cloud-connector-docs/end-user-terms.html) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/end-user-terms.html).
+We may update this statement; the date at the top shows the latest version. Each app's end-user terms continue to apply: [Cloud Connector for Jira](./jira-cloud-connector-docs/end-user-terms.html) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/end-user-terms.html) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/end-user-terms.html).
 
 ---
 
