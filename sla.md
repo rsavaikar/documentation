@@ -8,7 +8,7 @@ redirect_from:
 
 [Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
-# Support SLA – Wolf Apps
+# Support SLA – Fox Apps
 
 *Last updated: 30 October 2026 · Rahul Savaikar*
 

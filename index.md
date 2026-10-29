@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Wolf Apps documentation
+title: Fox Apps documentation
 ---
 
-# Wolf Apps documentation
+# Fox Apps documentation
 
 Guides, policies and support for each app.
 
