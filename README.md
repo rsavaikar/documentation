@@ -1,6 +1,6 @@
-# Wolf Apps documentation
+# Fox Apps documentation
 
-Source of the public documentation for Wolf Apps, published with GitHub Pages at
+Source of the public documentation for Fox Apps, published with GitHub Pages at
 <https://rsavaikar.github.io/documentation/>.
 
 | Path | Contents |
