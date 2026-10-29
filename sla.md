@@ -22,7 +22,7 @@ It covers how to reach us, when we respond, and how we handle security issues. T
 
 ## How to get support
 
-- **Email:** [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com). Name the app in the subject.
+- **Email:** [imnicky23@gmail.com](mailto:imnicky23@gmail.com). Name the app in the subject.
 - **Documentation and troubleshooting:** each app's documentation, linked above.
 
 Please include your Jira site address and the exact message you see, including any reference it shows. Each app's **Support** page lists what else helps. Never send pairing codes, exports or attachments with confidential data.

@@ -19,4 +19,4 @@ Images are in `assets/images/`. The banner and logo come from the app repository
 
 The Support SLA and privacy policy are shared by all apps: `sla.md` and `privacy-policy.md` at the repository root, with a section per app. The old addresses in this folder redirect there.
 
-Support: [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com)
+Support: [imnicky23@gmail.com](mailto:imnicky23@gmail.com)

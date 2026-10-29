@@ -28,7 +28,7 @@ The [privacy policy](../privacy-policy.html#cloud-connector-for-jira) describes 
 
 ## 4. Support and changes
 
-Support is provided by email at [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com), as described in the [Support SLA](../sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
+Support is provided by email at [imnicky23@gmail.com](mailto:imnicky23@gmail.com), as described in the [Support SLA](../sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
 
 ## 5. No warranty
 
@@ -48,7 +48,7 @@ These terms are governed by the laws of India, and the courts of Pune, India hav
 
 ## Contact
 
-[rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com)
+[imnicky23@gmail.com](mailto:imnicky23@gmail.com)
 
 ---
 
