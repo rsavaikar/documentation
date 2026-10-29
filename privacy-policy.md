@@ -6,16 +6,17 @@ redirect_from:
   - /jira-portal-fields-docs/privacy-policy.html
 ---
 
-[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
+[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
 # Privacy policy – Wolf Apps
 
-*Last updated: 29 October 2026 · Rahul Savaikar*
+*Last updated: 30 October 2026 · Rahul Savaikar*
 
 This policy covers the free Atlassian Cloud apps published by Rahul Savaikar ("we"), each built on Atlassian Forge:
 
 - [Cloud Connector for Jira](#cloud-connector-for-jira) keeps a Jira project on your site in sync with a project on a partner's Jira site.
 - [Portal Fields for JSM Cloud](#portal-fields-for-jsm-cloud) shows request fields in a report and charts on your Jira Service Management customer portal.
+- [KPI Dashboard Gadget](#kpi-dashboard-gadget) shows support figures and partner case overviews in gadgets on your Jira dashboards.
 
 It explains what data each app handles, where it goes and how long it is kept. The principles below apply to every app; each app's section lists its own data.
 
@@ -69,6 +70,26 @@ The app reads request data from Jira when someone opens the report and shows it 
 
 **Security:** which requests a user sees is always decided by Jira, for that user. Only Jira and project administrators can change the app's settings, and the app checks their permission on every change. Error messages shown to users contain no technical details, only a reference.
 
+## KPI Dashboard Gadget
+
+The gadgets read tickets from your Jira site as the person viewing the dashboard and show the figures in that person's browser.
+
+| Data | Purpose | Where it goes | Kept for |
+| --- | --- | --- | --- |
+| Ticket details: key, summary, status, priority, assignee's display name, organisations, security level name, created, updated and resolved dates | Calculate and show the figures, charts and tables | Read from your Jira site and shown only to the user viewing the dashboard | Not stored by the app; it lives in Jira |
+| Values of the fields set in the gadget: first response date, satisfaction rating, and optionally an assignment date and a request scope | Calculate response times, SLA, CSAT and the scope filter | Read from your Jira site and shown to the same user | Not stored by the app |
+| Gadget settings: the JQL query or saved filter, refresh interval, field names, organisation prefixes and SLA targets | Run each gadget as its dashboard owner configured it | Saved by Jira with the dashboard, not in app storage | Until changed, or the gadget or app is removed |
+| Exports (PNG charts, CSV tables) | Let the user save a chart or table | Created in the user's browser and saved to their device; not sent anywhere | On the user's device, under their organisation's control |
+| Operational log lines: which part of the app failed and the status code, never the query or Jira's error text | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
+
+**Who sees what:** every Jira call is made as the person viewing the dashboard. Each viewer sees only the tickets their own Jira permissions, issue security levels and filter sharing allow; the app never reads Jira with permissions of its own.
+
+**Personal data:** the app stores no personal data. Assignees' display names are shown only to viewers who may already see those tickets in Jira.
+
+**Your choices:** dashboard owners decide which tickets each gadget includes and which fields it uses; Jira administrators decide who can view each dashboard.
+
+**Security:** the app has one permission, `read:jira-work`, and only reads from Jira. Error messages show no technical details, and CSV exports neutralise cells that a spreadsheet could run as formulas.
+
 ## Who receives data
 
 - **Atlassian.** The apps run on Atlassian's Forge platform, which hosts their functions, storage and logs under [Atlassian's privacy policy](https://www.atlassian.com/legal/privacy-policy).
@@ -93,4 +114,4 @@ We will post changes to this policy on this page with a new "Last updated" date.
 
 ---
 
-[Support SLA](./sla.html) · End-user terms: [Cloud Connector for Jira](./jira-cloud-connector-docs/end-user-terms.html) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/end-user-terms.html)
+[Support SLA](./sla.html) · End-user terms: [Cloud Connector for Jira](./jira-cloud-connector-docs/end-user-terms.html) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/end-user-terms.html) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/end-user-terms.html)

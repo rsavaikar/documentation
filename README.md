@@ -12,6 +12,7 @@ Source of the public documentation for Wolf Apps, published with GitHub Pages at
 | `privacy-policy.md` | Privacy policy for all apps, with a section per app |
 | `jira-cloud-connector-docs/` | [Cloud Connector for Jira](https://rsavaikar.github.io/documentation/jira-cloud-connector-docs/) |
 | `jira-portal-fields-docs/` | [Portal Fields for JSM Cloud](https://rsavaikar.github.io/documentation/jira-portal-fields-docs/) |
+| `kpi-dashboard-gadget-docs/` | [KPI Dashboard Gadget](https://rsavaikar.github.io/documentation/kpi-dashboard-gadget-docs/) |
 
 ## Adding an app
 

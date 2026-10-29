@@ -3,11 +3,11 @@ layout: default
 title: Support
 ---
 
-[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
+[Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
 # Support – Wolf Apps
 
-*Last updated: 29 October 2026 · Rahul Savaikar*
+*Last updated: 30 October 2026 · Rahul Savaikar*
 
 Email [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com) and **name the app in the subject**. Support hours and response times are in the [Support SLA](./sla.html).
 
@@ -17,6 +17,7 @@ Many questions are answered in each app's troubleshooting guide:
 | --- | --- | --- |
 | Cloud Connector for Jira | [Troubleshooting](./jira-cloud-connector-docs/troubleshooting.html) | [Support details](./jira-cloud-connector-docs/support.html) |
 | Portal Fields for JSM Cloud | [Troubleshooting](./jira-portal-fields-docs/troubleshooting.html) | [Support details](./jira-portal-fields-docs/support.html) |
+| KPI Dashboard Gadget | [Troubleshooting](./kpi-dashboard-gadget-docs/troubleshooting.html) | [Support details](./kpi-dashboard-gadget-docs/support.html) |
 
 ## What to include
 
@@ -26,7 +27,7 @@ For every app:
 - the exact message you see, including any **reference** it shows, or a screenshot;
 - what you expected to happen and what happened instead.
 
-Each app's support details list what else helps, such as the connection name for Cloud Connector for Jira or the service project for Portal Fields for JSM Cloud.
+Each app's support details list what else helps, such as the connection name for Cloud Connector for Jira, the service project for Portal Fields for JSM Cloud, or the dashboard and gadget for KPI Dashboard Gadget.
 
 Please don't send pairing codes, exports, or screenshots and attachments with confidential data.
 
