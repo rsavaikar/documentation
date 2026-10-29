@@ -1,6 +1,8 @@
 title: Wolf Apps documentation
 description: Guides, policies and support for Wolf Apps
 theme: jekyll-theme-minimal
+# Vendor logo in the header of every page (source: assets/brand/vendor-logo.svg).
+logo: /assets/brand/vendor-logo-144.png
 
 # GitHub Pages reads this file only at the repository root, so it applies to every app.
 # Each app's pages live in their own folder (for example jira-cloud-connector-docs/);

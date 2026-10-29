@@ -10,6 +10,8 @@ Source of the public documentation for Wolf Apps, published with GitHub Pages at
 | `support.md` | Support page for all apps, linking each app's troubleshooting and support details |
 | `sla.md` | Support SLA for all apps, with app-specific notes |
 | `privacy-policy.md` | Privacy policy for all apps, with a section per app |
+| `assets/brand/` | Vendor logo: `vendor-logo.svg` (source) and PNGs at 512 and 144 px; the 144 px one is the site's header logo (`logo` in `_config.yml`) |
+| `favicon.ico` | Browser tab icon, made from the vendor logo |
 | `jira-cloud-connector-docs/` | [Cloud Connector for Jira](https://rsavaikar.github.io/documentation/jira-cloud-connector-docs/) |
 | `jira-portal-fields-docs/` | [Portal Fields for JSM Cloud](https://rsavaikar.github.io/documentation/jira-portal-fields-docs/) |
 | `kpi-dashboard-gadget-docs/` | [KPI Dashboard Gadget](https://rsavaikar.github.io/documentation/kpi-dashboard-gadget-docs/) |
