@@ -1,6 +1,6 @@
-# Fox Apps documentation
+# Silver Fox Apps documentation
 
-Source of the public documentation for Fox Apps, published with GitHub Pages at
+Source of the public documentation for Silver Fox Apps, published with GitHub Pages at
 <https://rsavaikar.github.io/documentation/>.
 
 | Path | Contents |
