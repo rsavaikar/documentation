@@ -110,7 +110,7 @@ Uninstalling an app removes its stored data on your site, following Atlassian's 
 
 ## Changes and contact
 
-We will post changes to this policy on this page with a new "Last updated" date. Questions or requests: [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com).
+We will post changes to this policy on this page with a new "Last updated" date. Questions or requests: [imnicky23@gmail.com](mailto:imnicky23@gmail.com).
 
 ---
 

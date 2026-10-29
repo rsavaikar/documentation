@@ -9,7 +9,7 @@ title: Support
 
 *Last updated: 30 October 2026 · Rahul Savaikar*
 
-Email [rahul.savaikar@gmail.com](mailto:rahul.savaikar@gmail.com). Support hours and response times are described in the [Support SLA](../sla.html). Many questions are answered in [Troubleshooting](./troubleshooting.html).
+Email [imnicky23@gmail.com](mailto:imnicky23@gmail.com). Support hours and response times are described in the [Support SLA](../sla.html). Many questions are answered in [Troubleshooting](./troubleshooting.html).
 
 To help us help you quickly, include:
 
