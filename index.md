@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Fox Apps documentation
+title: Silver Fox Apps documentation
 ---
 
-# Fox Apps documentation
+# Silver Fox Apps documentation
 
 Guides, policies and support for each app.
 
