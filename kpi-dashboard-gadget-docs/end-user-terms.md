@@ -7,7 +7,7 @@ title: End-user terms
 
 # End-user terms – KPI Dashboard Gadget
 
-*Last updated: 30 October 2026 · Rahul Savaikar*
+*Last updated: 31 October 2026 · Rahul Savaikar*
 
 These terms (our terms of service) apply when your organisation ("you") installs or uses KPI Dashboard Gadget ("the app"), published by Rahul Savaikar ("we"). By installing the app you accept them on behalf of your organisation.
 
@@ -32,7 +32,7 @@ Support is provided by email at [imnicky23@gmail.com](mailto:imnicky23@gmail.com
 
 ## 5. No warranty
 
-The app is provided "as is" and "as available", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not guarantee that the figures, charts or exports are uninterrupted, complete or error-free; for example, a gadget includes at most 3,000 tickets, and its SLA figures use elapsed time rather than Jira's SLA calendars. Jira remains the source of truth for your tickets.
+The app is provided "as is" and "as available", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not guarantee that the figures, charts or exports are uninterrupted, complete or error-free; for example, a gadget includes at most 3,000 tickets, and unless a Jira SLA is chosen in its settings, its SLA figures use elapsed time rather than Jira's SLA calendars. Jira remains the source of truth for your tickets.
 
 ## 6. Limitation of liability
 
