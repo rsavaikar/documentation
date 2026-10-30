@@ -31,14 +31,14 @@ This page explains how to read and use the gadgets on a dashboard. The figures i
 | Figure | Meaning |
 | --- | --- |
 | Tickets in selected data | Tickets that match the filters |
-| Closed tickets | Of those, closed, with the share |
+| Closed tickets | Of those, closed, with the share. Closed means the status name contains closed, resolved, completed or done. |
 | Resolved, last 7 days | Ignores the Month filter |
 | Average response time | First response minus assignment (or created) time, for tickets with both dates. The text below it says how many tickets were measured and from which date, how many were left out because the response is earlier than the start date, and how many have no first response date. |
 | Average resolution time | Resolved minus created time |
 | First response SLA met | If your administrator chose a Jira SLA: Jira's own result, met ÷ (met + breached); SLAs still running or paused aren't counted. Otherwise: share of tickets whose response time was within the target for their priority. |
 | Resolution SLA met | Jira's own result, counted the same way. Shown only if your administrator chose a resolution SLA. |
 | CSAT satisfied | Share of ratings that are 4 or 5 |
-| Open / not closed | Tickets not yet closed |
+| Open / not closed | All other tickets, which includes statuses such as Canceled or Declined |
 | Stale tickets | Open and not updated for 14 days or more; ignores the Month filter |
 | Tickets with response data | Tickets with a measured response time; negative durations are left out |
 

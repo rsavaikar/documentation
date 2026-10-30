@@ -13,7 +13,7 @@ title: Troubleshooting
 
 | Message | What to do |
 | --- | --- |
-| Choose the tickets for this gadget: open the gadget menu (⋯), select Edit, and enter a JQL query or saved filter. | The gadget has no query or filter yet. Open its settings and save one. |
+| Choose the tickets for this gadget: edit the dashboard, open the gadget menu (⋯), select Configure, and enter a JQL query or saved filter. | The gadget has no query or filter yet. Open its settings and save one. |
 | Searching tickets failed: Jira rejected the query. Check the JQL or filter in the gadget settings. | The query is invalid, or the saved filter was deleted or isn't shared with you. Open the settings and click **Check query**: it shows Jira's reason to you as the editor. Share the filter with the dashboard's viewers, or use a JQL query instead. |
 | Searching tickets failed: you do not have permission. | Your Jira account can't run this search. Ask a Jira administrator for access to the project. |
 | Searching tickets failed: Jira is busy. Try again in a minute. | Jira limited the number of requests. Click **Reload** after a minute. |
@@ -50,6 +50,9 @@ They fit on one row on a wide gadget and wrap on a narrower one, such as a half-
 
 **Organisations or CSAT are empty.**
 By default these use Jira Service Management's **Organizations** and **Satisfaction** fields. Check the fields chosen in the settings. Projects without them, or tickets without values, show nothing there.
+
+**Canceled or declined tickets count as open.**
+The KPI Dashboard's **Closed tickets** and **Open / not closed** figures go by the status name: closed means the name contains closed, resolved, completed or done. Other statuses, such as Canceled or Declined, count as not closed, even though Jira treats them as done. **Stale tickets** follows Jira's status category, so those tickets are not stale.
 
 **Partners count as customers.**
 Set the **Partner organization prefix** in the gadget's settings.

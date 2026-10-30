@@ -67,12 +67,13 @@ Both gadgets load up to 3,000 tickets and refresh every 15, 30 or 60 minutes, or
 | --- | --- |
 | Response time | First response date minus assignment date. Without an assignment date field, or if a ticket has none, from the created date. Tickets whose response is earlier than the start date are left out, and the gadget says how many. |
 | Resolution time | Resolved date minus created date |
+| Closed, Open / not closed | Closed means the status name contains closed, resolved, completed or done; every other status counts as not closed |
 | First-response SLA, with an SLA chosen | Jira's own result: met ÷ (met + breached). A ticket that breached in any cycle counts as breached. SLAs still running or paused aren't counted. |
 | First-response SLA, without one | Response time within the target for the ticket's priority: Highest, Critical, High and Medium use the urgent target (2 hours by default); Lowest, Low and Trivial use the other target (24 hours by default). Elapsed time, not business hours. |
 | Resolution SLA | Jira's own result from the chosen SLA, counted the same way. Shown only when one is chosen. |
 | CSAT | Ratings 1–5 only; 4 or 5 is satisfied, 1 or 2 dissatisfied |
 | Month | The month of the **Month based on** field if one is chosen, else the assignment month, else the created month |
-| Stale | Open and not updated for 14 days or more |
+| Stale | Open, by Jira's status category, and not updated for 14 days or more |
 | Customer (Partner Case Overview) | Each organisation on the ticket that doesn't start with the partner prefix |
 
 Response and resolution times are elapsed time from Jira fields, while a Jira SLA follows its calendar and pauses, so the two can differ on the same ticket. Without an SLA chosen, check the SLA figures against your Jira SLA configuration before using them in contracts.

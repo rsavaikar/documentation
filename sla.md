@@ -10,7 +10,7 @@ redirect_from:
 
 # Support SLA – Silver Fox Apps
 
-*Last updated: 30 October 2026 · Rahul Savaikar*
+*Last updated: 31 October 2026 · Rahul Savaikar*
 
 This statement describes the support you can expect for the free Atlassian Cloud apps published by Rahul Savaikar ("we"):
 
@@ -79,7 +79,7 @@ Every app runs entirely on Atlassian's Forge platform. Its availability depends 
 ### KPI Dashboard Gadget
 
 - **Critical** includes the gadgets failing to load for all users of a site, and a viewer seeing tickets their Jira permissions don't allow.
-- Not covered: the gadgets' queries, field names and targets, which dashboard owners set, and differences between the gadgets' elapsed-time SLA figures and Jira's SLA calendars.
+- Not covered: the gadgets' queries, fields and targets, which dashboard owners set, and differences between the gadgets' elapsed-time figures and Jira's SLA calendars. Without a Jira SLA chosen, SLA figures are elapsed time; with one chosen, they show Jira's own result.
 
 ## Changes
 
