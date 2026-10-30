@@ -60,7 +60,7 @@ Open **Fields, organization groups and SLA targets** to fit the gadget to your s
 
 **Partner Case Overview** shows only the Organizations field and the two organisation prefixes, under **Organizations**. Organisations that start with the partner prefix are partners; every other organisation on a ticket counts as a customer.
 
-**Choosing fields.** Each setting is a searchable list of your site's Jira fields, showing only fields that suit it, with each field's name and ID so you can tell apart fields with the same name. Choose **Not used** if your site has no such field.
+**Choosing fields.** Each setting is a list of your site's Jira fields, showing only fields that suit it, with each field's name and ID so you can tell apart fields with the same name. Choose **Not used** if your site has no such field.
 
 - The date lists offer date fields, including system dates such as Created, but not Updated, which changes on every edit.
 - A field with a date but no time can be chosen, with a warning: it reads as midnight, so response times are approximate.

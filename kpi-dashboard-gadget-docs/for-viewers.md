@@ -22,7 +22,7 @@ This page explains how to read and use the gadgets on a dashboard. The figures i
 | Organization(s) | One or more organisations; choose whether tickets need **any** or **all** of them |
 | Status | One or more statuses |
 | Request scope | One scope; shown only if your administrator set a scope field |
-| Response time measured from | Assignment time, else created time; or assignment time only. Shown only if an assignment date field is set. |
+| Response time measured from | Assignment time, else created time; or assignment time only. With assignment time only, response figures and the **Tickets by engineer** chart leave out tickets with no assignment date. Shown only if an assignment date field is set. |
 
 **Reset filters** clears them. **Reload** fetches the tickets again; the gadget also refreshes on its own schedule.
 
