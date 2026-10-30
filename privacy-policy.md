@@ -10,7 +10,7 @@ redirect_from:
 
 # Privacy policy – Silver Fox Apps
 
-*Last updated: 30 October 2026 · Rahul Savaikar*
+*Last updated: 31 October 2026 · Rahul Savaikar*
 
 This policy covers the free Atlassian Cloud apps published by Rahul Savaikar ("we"), each built on Atlassian Forge:
 
@@ -77,8 +77,8 @@ The gadgets read tickets from your Jira site as the person viewing the dashboard
 | Data | Purpose | Where it goes | Kept for |
 | --- | --- | --- | --- |
 | Ticket details: key, summary, status, priority, assignee's display name, organisations, security level name, created, updated and resolved dates | Calculate and show the figures, charts and tables | Read from your Jira site and shown only to the user viewing the dashboard | Not stored by the app; it lives in Jira |
-| Values of the fields set in the gadget: first response date, satisfaction rating, and optionally an assignment date and a request scope | Calculate response times, SLA, CSAT and the scope filter | Read from your Jira site and shown to the same user | Not stored by the app |
-| Gadget settings: the JQL query or saved filter, refresh interval, field names, organisation prefixes and SLA targets | Run each gadget as its dashboard owner configured it | Saved by Jira with the dashboard, not in app storage | Until changed, or the gadget or app is removed |
+| Values of the fields set in the gadget: first response date, satisfaction rating, organisations, and optionally an assignment date, a month date, a request scope and Jira Service Management SLA results | Calculate response times, SLA, CSAT, months and the scope filter | Read from your Jira site and shown to the same user | Not stored by the app |
+| Gadget settings: the JQL query or saved filter, refresh interval, field names and IDs, organisation prefixes and SLA targets | Run each gadget as its dashboard owner configured it | Saved by Jira with the dashboard, not in app storage | Until changed, or the gadget or app is removed |
 | Exports (PNG charts, CSV tables) | Let the user save a chart or table | Created in the user's browser and saved to their device; not sent anywhere | On the user's device, under their organisation's control |
 | Operational log lines: which part of the app failed and the status code, never the query or Jira's error text | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
 

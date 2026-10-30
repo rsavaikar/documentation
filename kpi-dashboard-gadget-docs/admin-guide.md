@@ -7,7 +7,7 @@ title: Admin guide
 
 # KPI Dashboard Gadget – Admin guide
 
-*Last updated: 30 October 2026 · Rahul Savaikar*
+*Last updated: 31 October 2026 · Rahul Savaikar*
 
 This guide is for Jira administrators, who install the app, and for anyone who builds dashboards with its gadgets.
 
@@ -33,7 +33,7 @@ Under **Tickets to include**, choose one:
 
 Keep the query bounded, for example by project and date: each gadget loads up to 3,000 tickets.
 
-Click **Check query** to run it as yourself. The gadget shows the first matching ticket and roughly how many tickets match, or Jira's reason if the query is invalid. **Open this query in Jira** runs the exact query in Jira's issue search for comparison.
+Click **Check query** to run it as yourself. The gadget shows the first matching ticket and roughly how many tickets match, or Jira's reason if the query is invalid. It also shows how many of the first 100 tickets have each chosen field filled, and how many have a first response before the assignment date, so you can see whether you picked the right fields. **Open this query in Jira** runs the exact query in Jira's issue search for comparison.
 
 Under **Refresh data every**, choose 15, 30 or 60 minutes.
 
@@ -45,18 +45,28 @@ Open **Fields, organization groups and SLA targets** to fit the gadget to your s
 
 | Setting | Default | What it does |
 | --- | --- | --- |
-| Assignment date field | Blank | Optional. A date-time field set when a ticket is assigned. Response time and the Month filter then start from it; blank means they use the created date. |
+| Assignment date field | Not used | Optional. A date field set when a ticket is assigned. Response time and the Month filter then start from it; tickets without it, or a gadget without this field, use the created date. |
 | First response date field | `[CHART] Date of First Response` | When the first response was made. Jira Service Management creates this field. |
+| Month based on | Same as the assignment date, else created | Optional. Which date decides the month a ticket counts under. |
 | Satisfaction rating field | `Satisfaction` | The customer satisfaction rating (1–5) from Service Management surveys |
-| Request scope field | Blank | Optional. A select field; when set, the gadget adds a **Request scope** filter. |
+| Request scope field | Not used | Optional. A select, text or number field; when set, the gadget adds a **Request scope** filter. |
+| Organizations field | `Organizations` | The field that holds a ticket's organisations |
+| First response SLA | Not used | Optional. A Jira Service Management SLA. When chosen, Jira's met or breached result replaces the two response targets below. |
+| Resolution SLA | Not used | Optional. A Jira Service Management SLA. When chosen, the gadget adds a **Resolution SLA met** figure and an engineer table column. |
 | Partner organization prefix | Blank | Optional. Organisations whose names start with it, for example `PRT_`, are grouped as partners. |
 | Customer organization prefix | Blank | Optional. Organisations whose names start with it, for example `CST_`, are grouped as customers. |
-| Response target, Highest/High/Medium (hours) | 2 | First-response target for urgent priorities, including Critical |
-| Response target, Low/Lowest (hours) | 24 | First-response target for other priorities, including Trivial |
+| Response target, Highest/High/Medium (hours) | 2 | First-response target for urgent priorities, including Critical. Used when no first response SLA is chosen. |
+| Response target, Low/Lowest (hours) | 24 | First-response target for other priorities, including Trivial. Used when no first response SLA is chosen. |
 
-**Partner Case Overview** shows only the two organisation prefixes, under **Organization groups**. Organisations that start with the partner prefix are partners; every other organisation on a ticket counts as a customer.
+**Partner Case Overview** shows only the Organizations field and the two organisation prefixes, under **Organizations**. Organisations that start with the partner prefix are partners; every other organisation on a ticket counts as a customer.
 
-Enter field names exactly as Jira shows them. Fields the gadget can't find are listed on the gadget, and their figures stay empty; nothing else breaks. Leave a field blank if your site has no such field.
+**Choosing fields.** Each setting is a searchable list of your site's Jira fields, showing only fields that suit it, with each field's name and ID so you can tell apart fields with the same name. Choose **Not used** if your site has no such field.
+
+- The date lists offer date fields, including system dates such as Created, but not Updated, which changes on every edit.
+- A field with a date but no time can be chosen, with a warning: it reads as midnight, so response times are approximate.
+- Fields are saved by their ID, so renaming a field in Jira breaks nothing. A gadget saved with typed field names keeps working and switches to IDs the next time someone saves its settings.
+- A field Jira no longer offers is marked **not found in Jira**. It's also listed on the gadget, and its figures stay empty; nothing else breaks.
+- The lists show the fields your own Jira account can see.
 
 ## 5. Save
 
