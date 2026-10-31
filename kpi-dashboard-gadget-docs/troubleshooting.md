@@ -30,6 +30,9 @@ title: Troubleshooting
 **The gadget is blank or keeps loading.**
 Reload the dashboard (Ctrl+F5). If you changed settings, check that you clicked **Save settings**.
 
+**The gadget still looks like the old version after an update.**
+Your browser may be showing a saved copy. Press Ctrl+F5 on the dashboard, or open it in a private window.
+
 **Response times or SLA show "—".**
 The first response date field isn't found or is empty on these tickets. Check it in the settings, and use **Check query** to see how many tickets have it filled. With an assignment date field set, response time also needs that field or falls back to the created date.
 
