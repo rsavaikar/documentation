@@ -43,10 +43,10 @@ Typical uses:
 | Feature | Details |
 | --- | --- |
 | Key figures | Tickets, closed tickets, average response time, average resolution time, first-response SLA met, resolution SLA met (if a resolution SLA is chosen), CSAT satisfied, open tickets, stale tickets, tickets resolved in the last 7 days. The response figure also says how many tickets were measured, excluded or have no first response date. |
-| Charts | Monthly ticket trend; tickets by engineer; tickets by organisation, with a share-of-tickets pie; CSAT score distribution and monthly CSAT trend |
+| Charts | Monthly ticket trend; tickets by engineer, split by status; tickets by organisation, with a share-of-tickets pie; CSAT score distribution and monthly CSAT trend |
 | Tables | Engineer performance; recently resolved (last 7 days); CSAT by engineer |
 | Filters | Month; engineers; organisations (tickets with any or all of them); status; request scope, if a scope field is set |
-| Drill-down | Click a bar, point, slice, engineer or key to open those tickets in Jira's issue search |
+| Drill-down | Click a bar, segment, point, slice, engineer or key to open those tickets in Jira's issue search |
 | Exports | Each chart as PNG (with its filters and date); engineer performance and recently resolved as CSV |
 
 **Partner Case Overview**

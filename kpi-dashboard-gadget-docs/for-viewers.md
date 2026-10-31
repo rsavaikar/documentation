@@ -48,7 +48,8 @@ The figures fit on one row on a wide gadget and wrap onto more rows on a narrowe
 
 **Charts and tables:**
 
-- **Monthly ticket trend**, **Tickets by engineer** and **Tickets by organization**: click a point or bar to open those tickets in Jira. With partner and customer prefixes set, **Show** limits the organisation chart to partners, customers or others.
+- **Tickets by engineer:** each engineer's bar is split by status, with the least common statuses grouped as **Other statuses**. Click a segment to open that engineer's tickets in that status in Jira.
+- **Monthly ticket trend** and **Tickets by organization**: click a point or bar to open those tickets in Jira. With partner and customer prefixes set, **Show** limits the organisation chart to partners, customers or others.
 - **Share of tickets by organization:** a pie of the organisations you choose.
 - **Engineer performance:** tickets, closed, average response and resolution time, SLA met (with a resolution SLA column if one is chosen) and CSAT per engineer. Search by name; **Export CSV** saves the table.
 - **Recently resolved (last 7 days):** tickets resolved in the last week, by resolved date. It also includes recently resolved tickets that the gadget's query leaves out only because of their created date. **Export CSV** saves the table.
