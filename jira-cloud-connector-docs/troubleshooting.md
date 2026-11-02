@@ -8,7 +8,7 @@ title: Troubleshooting
 
 # Troubleshooting
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 2 November 2026 · Rahul Savaikar*
 
 Most problems show up as a message on the connection's **Activity** tab. Find the message below.
 

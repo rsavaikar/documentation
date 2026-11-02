@@ -8,7 +8,7 @@ title: Admin guide
 
 # Cloud Connector for Jira – Admin guide
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 2 November 2026 · Rahul Savaikar*
 
 This guide is for the Jira administrators who set up Cloud Connector for Jira on their site. Each partner needs the same steps on its own site; plan about 15 minutes with the partner's admin.
 
@@ -58,6 +58,8 @@ Supported fields: text, paragraph, number, date, date and time, select, radio, m
 ### Statuses tab
 
 Map the partner's statuses to yours, one per line, for example `Resolved = Done`. **Load partner statuses** fetches their names for you. An issue only moves if your workflow allows that transition.
+
+If the transition's screen asks for a **Resolution**, the app sets your default resolution. When the transition doesn't allow the default (workflow properties `jira.field.resolution.include` / `exclude`), it sets **Done**, or the first resolution the transition allows, and notes this under **Activity**. The partner's resolution itself isn't synced. Transitions whose screen needs other fields filled in can't be completed automatically; remove the screen or the requirement from those transitions, or map the status to another one.
 
 ## 3. Check and go live
 

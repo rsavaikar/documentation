@@ -8,7 +8,7 @@ title: Product guide
 
 # Cloud Connector for Jira – Product guide
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 2 November 2026 · Rahul Savaikar*
 
 Cloud Connector for Jira keeps one project on your Jira Cloud site in sync with one project on a customer's or partner's Jira Cloud site: issues, fields, statuses, comments and files, both ways, without sharing any credentials. This guide explains what the app does, how it protects your data and how to get started.
 
@@ -42,7 +42,7 @@ Everything below works in both directions; each site chooses what it sends and r
 | --- | --- |
 | Issue created (mapped issue type; optionally only with a sync label) | Matching issue created, with web links between the two |
 | Summary or description edited | Same change on the linked issue (description sync can be switched off) |
-| Status changed | Linked issue moves to the mapped status, if its workflow allows |
+| Status changed | Linked issue moves to the mapped status, if its workflow allows; a resolution the transition accepts is set when its screen asks for one |
 | Mapped field changed | Field updated; option values translated through a value map |
 | Labels added or removed | Only those labels are added or removed; the partner's own labels stay |
 | Public comment added | Comment added with "*Name* wrote on *site*:"; an internal note in Service Management projects by default |
@@ -134,6 +134,8 @@ We list these openly so you can judge fit before installing.
 | File deletions; images inside descriptions | Not synced; embedded images show a placeholder |
 | Changing the issue type of a linked issue | Not synced |
 | Status mapping | One status map per connection, not per issue type |
+| Resolution | Not synced: each site's workflow sets it. If a transition's screen asks for one, the app sets your default resolution, or Done when the transition doesn't allow the default |
+| Transition screens with other required fields | Can't be completed automatically; the change fails with Jira's reason on the Activity tab |
 | Author shown on created issues and comments | The app; the original author's name is in the comment's first line |
 
 ## FAQ

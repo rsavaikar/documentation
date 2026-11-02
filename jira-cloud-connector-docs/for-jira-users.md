@@ -8,7 +8,7 @@ title: For Jira users
 
 # For Jira users
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 2 November 2026 · Rahul Savaikar*
 
 If your project is connected to a partner, you keep working in Jira as usual: Cloud Connector for Jira copies your changes to the partner's linked issue, and theirs to yours, usually within a minute.
 
@@ -33,6 +33,7 @@ If you can edit the issue, you also see a button:
 - In Service Management projects, partner comments arrive as **internal notes** by default, so your customers don't see them.
 - Both issues get a web link to each other.
 - Assignee and reporter are not synced: each team assigns work on its own site.
+- When the partner changes the status, your issue moves to the matching status. The resolution comes from your own workflow, not the partner's; if the move asks for one, the app picks your default resolution or **Done**.
 
 ## What stays private
 
