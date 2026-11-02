@@ -53,13 +53,15 @@ Map each shared key to one of your issue types and tick **Sync**. In a Service M
 3. For select-type fields, click **Values** to map options whose names differ, for example your **Critical** to the partner's **Highest**.
 4. Under **Fields per issue type**, choose which fields sync for each issue type.
 
-Supported fields: text, paragraph, number, date, date and time, select, radio, multi-select, checkboxes, priority and labels. A value the partner sends that your field doesn't have is skipped and listed under **Activity**; the rest of the update still applies.
+Supported fields: text, paragraph, number, date, date and time, select, radio, multi-select, checkboxes, priority, resolution and labels. A value the partner sends that your field doesn't have is skipped and listed under **Activity**; the rest of the update still applies.
+
+**Resolution** is always offered under **Add field**, even though it isn't on create screens. Map its values under **Values** where names differ, for example your **Fixed** to the partner's **Done**. An incoming resolution is set with the status change when the transition asks for one; without a status change, it needs Resolution on your edit screen. A cleared resolution (for example when the partner reopens the issue) is left to your workflow.
 
 ### Statuses tab
 
 Map the partner's statuses to yours, one per line, for example `Resolved = Done`. **Load partner statuses** fetches their names for you. An issue only moves if your workflow allows that transition.
 
-If the transition's screen asks for a **Resolution**, the app sets your default resolution. When the transition doesn't allow the default (workflow properties `jira.field.resolution.include` / `exclude`), it sets **Done**, or the first resolution the transition allows, and notes this under **Activity**. The partner's resolution itself isn't synced. Transitions whose screen needs other fields filled in can't be completed automatically; remove the screen or the requirement from those transitions, or map the status to another one.
+If the transition's screen asks for a **Resolution** and you mapped **Resolution** on the **Fields** tab, the app sets the partner's resolution, translated through **Values**. Otherwise it sets your default resolution. When the transition doesn't allow the default (workflow properties `jira.field.resolution.include` / `exclude`), it sets **Done**, or the first resolution the transition allows, and notes this under **Activity**. Transitions whose screen needs other fields filled in can't be completed automatically; remove the screen or the requirement from those transitions, or map the status to another one.
 
 ## 3. Check and go live
 

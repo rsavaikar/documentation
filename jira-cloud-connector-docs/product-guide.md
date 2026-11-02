@@ -42,14 +42,14 @@ Everything below works in both directions; each site chooses what it sends and r
 | --- | --- |
 | Issue created (mapped issue type; optionally only with a sync label) | Matching issue created, with web links between the two |
 | Summary or description edited | Same change on the linked issue (description sync can be switched off) |
-| Status changed | Linked issue moves to the mapped status, if its workflow allows; a resolution the transition accepts is set when its screen asks for one |
+| Status changed | Linked issue moves to the mapped status, if its workflow allows; when its screen asks for a resolution, the partner's (if you map Resolution) or one the transition accepts is set |
 | Mapped field changed | Field updated; option values translated through a value map |
 | Labels added or removed | Only those labels are added or removed; the partner's own labels stay |
 | Public comment added | Comment added with "*Name* wrote on *site*:"; an internal note in Service Management projects by default |
 | File attached (both sites opt in) | Same file attached, up to a size limit each site sets (max. 25 MB) |
 | Issue deleted | Partner's copy is unlinked and gets a comment saying why; it is not deleted |
 
-**Mappable fields:** text, paragraph, number, date, date and time, single select, radio, multi-select, checkboxes, priority and labels, both system and custom fields.
+**Mappable fields:** text, paragraph, number, date, date and time, single select, radio, multi-select, checkboxes, priority, resolution and labels, both system and custom fields.
 
 **Service Management:** issues created from a partner get the request type you choose per issue type, so they appear in queues and on the portal.
 
@@ -134,7 +134,7 @@ We list these openly so you can judge fit before installing.
 | File deletions; images inside descriptions | Not synced; embedded images show a placeholder |
 | Changing the issue type of a linked issue | Not synced |
 | Status mapping | One status map per connection, not per issue type |
-| Resolution | Not synced: each site's workflow sets it. If a transition's screen asks for one, the app sets your default resolution, or Done when the transition doesn't allow the default |
+| Resolution | Synced only if you map it on the Fields tab, and set with the status change or on the edit screen. A cleared resolution is left to each site's workflow |
 | Transition screens with other required fields | Can't be completed automatically; the change fails with Jira's reason on the Activity tab |
 | Author shown on created issues and comments | The app; the original author's name is in the comment's first line |
 

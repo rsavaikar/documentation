@@ -33,7 +33,7 @@ If you can edit the issue, you also see a button:
 - In Service Management projects, partner comments arrive as **internal notes** by default, so your customers don't see them.
 - Both issues get a web link to each other.
 - Assignee and reporter are not synced: each team assigns work on its own site.
-- When the partner changes the status, your issue moves to the matching status. The resolution comes from your own workflow, not the partner's; if the move asks for one, the app picks your default resolution or **Done**.
+- When the partner changes the status, your issue moves to the matching status. If your admin mapped Resolution, the partner's resolution comes along; otherwise your own workflow decides it, and if the move asks for one the app picks your default resolution or **Done**.
 
 ## What stays private
 
