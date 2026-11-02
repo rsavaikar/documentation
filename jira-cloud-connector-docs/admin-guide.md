@@ -55,6 +55,10 @@ Map each shared key to one of your issue types and tick **Sync**. In a Service M
 
 Supported fields: text, paragraph, number, date, date and time, select, radio, multi-select, checkboxes, priority, resolution and labels. A value the partner sends that your field doesn't have is skipped and listed under **Activity**; the rest of the update still applies.
 
+The field list shows every supported field on your site. Fields on the create screens of your mapped issue types come first; the others are marked *not on a create screen*. You can map those ahead of time, but a field must be on the create screen to fill new issues and on the edit screen to receive updates. Their options aren't known until then, so for a select-type field type the option names under **Values**.
+
+Issues that are already linked pick up a newly mapped field the next time that field changes, or when you click **Resync now** in the issue's Cloud Connector panel.
+
 **Resolution** is always offered under **Add field**, even though it isn't on create screens. Map its values under **Values** where names differ, for example your **Fixed** to the partner's **Done**. An incoming resolution is set with the status change when the transition asks for one; without a status change, it needs Resolution on your edit screen. A cleared resolution (for example when the partner reopens the issue) is left to your workflow.
 
 ### Statuses tab
