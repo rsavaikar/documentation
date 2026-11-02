@@ -40,6 +40,14 @@ Most problems show up as a message on the connection's **Activity** tab. Find th
 
 **A change didn't arrive?** Look under **Activity → Failed changes** and click **Retry**, or use **Resync now** in the issue's panel.
 
+**A field didn't sync, with no warning under Activity?** The field isn't part of the contract on one side. Run **Check contract**: the field's key must be *mapped* on both sites, and **Values flow** must point the way you expect (*both ways*, or *to peer* / *from peer*). If it says *to peer* only, the partner's direction is **Receive only** or yours is **Send only**. Also check that the key is chosen under **Fields per issue type** on both sites; **Check contract** doesn't compare those.
+
+**Mapped a field, but linked issues still show the old value?** Updates carry only the fields that changed. Values set before the mapping was saved arrive the next time that field changes, or right away when you click **Resync now** on the sending side's issue.
+
+**Can't find a field in the list?** Every supported field on your site is listed, those on your mapped issue types' create screens first. Fields of unsupported types (users, cascading selects, versions, components) and fields Jira fills itself (Created, Updated) aren't offered. Click **Reload fields from Jira** after creating a field.
+
+**No options under Values?** Jira only lists a select field's options when the field is on a create screen of your mapped issue types. Add it to the screen and click **Reload fields from Jira**, or type the option names with **Add option**.
+
 **Still stuck?** [Contact support](./support.html) with the exact message from the Activity tab.
 
 ---
