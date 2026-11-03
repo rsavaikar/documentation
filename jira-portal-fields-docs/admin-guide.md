@@ -7,7 +7,7 @@ title: Admin guide
 
 # Portal Fields for JSM Cloud – Admin guide
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 3 November 2026 · Rahul Savaikar*
 
 This guide is for Jira administrators and service project administrators. The app is **off by default**: nothing appears on any portal until you switch it on for a project.
 
@@ -31,6 +31,9 @@ The app then adds two settings pages: one for defaults across all projects, and 
 | Default charts | Charts customers can open, for projects that haven't chosen their own |
 
 ## 3. Switch on a service project
+
+![The app's project settings: show the report, choose extra columns and charts, and set export and visibility options](./assets/images/project-settings.png)
+*Example with sample data.*
 
 **Space settings → Apps → Portal Fields for JSM Cloud** in the service project (project administrators).
 

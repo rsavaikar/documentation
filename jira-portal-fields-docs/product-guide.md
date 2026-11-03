@@ -7,7 +7,7 @@ title: Product guide
 
 # Portal Fields for JSM Cloud – Product guide
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 3 November 2026 · Rahul Savaikar*
 
 Portal Fields for JSM Cloud adds a request report and charts to the Jira Service Management customer portal, showing the request fields your customers ask about: priority, SLA times, organisations, custom select lists and more. Your administrators choose the fields; Jira decides which requests each customer may see. This guide explains what the app does, how it protects your data and how to get started.
 
@@ -37,6 +37,9 @@ Typical uses:
 - **Fewer status questions:** customers see priority, assignee or custom status fields themselves instead of asking.
 
 ## What customers see
+
+![The request report: requests with extra columns such as priority, time to resolution and organisations, with filters and CSV and Excel export](./assets/images/request-report.png)
+*Example with sample data.*
 
 | Feature | Details |
 | --- | --- |

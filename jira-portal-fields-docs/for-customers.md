@@ -7,11 +7,14 @@ title: For portal customers
 
 # For portal customers
 
-*Last updated: 28 October 2026 · Rahul Savaikar*
+*Last updated: 3 November 2026 · Rahul Savaikar*
 
 Your service provider has added an **Advanced request report** to their customer portal. It shows your requests with more details than the standard list, and lets you sort, filter, export and chart them.
 
 ## Opening the report
+
+![The Advanced request report card under the Requests title on the customer portal, with Charts and Open report buttons](./assets/images/portal-entry.png)
+*Example with sample data.*
 
 1. Log in to the customer portal and open **Requests** (from your profile menu, or the Requests link).
 2. Under the page title, find **Advanced request report**.
@@ -20,6 +23,9 @@ Your service provider has added an **Advanced request report** to their customer
 If you don't see the section, your provider hasn't switched it on for the portals you use.
 
 ## The request list
+
+![The request report: requests with extra columns such as priority, time to resolution and organisations, with filters and CSV and Excel export](./assets/images/request-report.png)
+*Example with sample data.*
 
 | To | Do this |
 | --- | --- |
@@ -35,6 +41,9 @@ The list shows 50 requests per page; use **Previous** and **Next** to move betwe
 
 ## Your columns
 
+![The Columns panel: each customer shows, hides and reorders their own columns](./assets/images/column-chooser.png)
+*Example with sample data.*
+
 Click **Columns** to choose and arrange columns:
 
 - Tick or untick a column to show or hide it. **Reference** always stays, as it opens the request.
@@ -44,6 +53,9 @@ Click **Columns** to choose and arrange columns:
 Your layout is saved to your account, so it's the same on every computer and browser.
 
 ## Charts
+
+![Request charts: SLA met vs breached per month for Time to resolution](./assets/images/request-charts.png)
+*Example with sample data.*
 
 **Charts** opens four charts about your requests. Pick one on the left:
 
