@@ -10,7 +10,7 @@ redirect_from:
 
 # Privacy policy – Silver Fox Apps
 
-*Last updated: 31 October 2026 · Rahul Savaikar*
+*Last updated: 3 November 2026 · Rahul Savaikar*
 
 This policy covers the free Atlassian Cloud apps published by Rahul Savaikar ("we"), each built on Atlassian Forge:
 
@@ -60,7 +60,7 @@ The app reads request data from Jira when someone opens the report and shows it 
 | Exports (CSV, Excel, PDF, PNG, JPG) | Let the user save the report or a chart | Created in the user's browser and saved to their device; not sent anywhere | On the user's device, under their organisation's control |
 | App settings: which projects use the app, chosen fields and charts, export and visibility options | Run the app as your administrators configured it | App storage on your site | Until changed, or the app is uninstalled |
 | Column layout: the user's Atlassian account ID, column order, hidden columns and when it was last changed | Keep each user's layout across browsers and devices | App storage on your site | While the app is installed; see below |
-| Operational log lines: an error reference, which part of the app failed and the status code, never Jira's error text; load times and counts | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
+| Operational log lines: an error reference, which part of the app failed, the status code and Jira's error message with the names and values it quotes removed; load times and counts | Diagnose problems | Atlassian's Forge logging | As set by Atlassian |
 
 **Who sees what:** your users see only requests that Jira already lets them see on the portal, and only the fields your administrators enabled. If a project administrator switches on "Show all requests", every customer who can open that project's portal sees all of its requests, with the reporter's name, except requests with an issue security level, which stay visible only to those Jira allows. This setting is off by default.
 
@@ -99,6 +99,10 @@ The gadgets read tickets from your Jira site as the person viewing the dashboard
 ## Where data is stored
 
 Data the apps store is kept in Forge hosted storage on your Atlassian site and follows your site's data residency location. Data that Cloud Connector for Jira sends to a partner is stored in the partner's Jira, under the partner's settings.
+
+**In scope for data residency:** everything an app keeps in Forge hosted storage, as listed under "App storage on your site" in each app's section above, such as Portal Fields for JSM Cloud's settings and users' column layouts. Atlassian keeps it in, and moves it with, the location your site is pinned to.
+
+**Not in scope:** Jira data that an app reads but does not keep, which stays in Jira under your site's own settings; operational log lines, which are kept by Atlassian's Forge logging; and files your users export, which are saved on their own devices.
 
 ## Security
 
