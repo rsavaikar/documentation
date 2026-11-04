@@ -5,9 +5,9 @@ title: Support
 
 [Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
-# Support – Silver Fox Apps
+# Support – Silverfox Labs
 
-*Last updated: 30 October 2026 · Rahul Savaikar*
+*Last updated: 4 November 2026 · Rahul Savaikar*
 
 Email [imnicky23@gmail.com](mailto:imnicky23@gmail.com) and **name the app in the subject**. Support hours and response times are in the [Support SLA](./sla.html).
 

@@ -1,6 +1,6 @@
-# Silver Fox Apps documentation
+# Silverfox Labs documentation
 
-Source of the public documentation for Silver Fox Apps, published with GitHub Pages at
+Source of the public documentation for Silverfox Labs, published with GitHub Pages at
 <https://rsavaikar.github.io/documentation/>.
 
 | Path | Contents |

@@ -8,9 +8,9 @@ redirect_from:
 
 [Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
-# Privacy policy – Silver Fox Apps
+# Privacy policy – Silverfox Labs
 
-*Last updated: 3 November 2026 · Rahul Savaikar*
+*Last updated: 4 November 2026 · Rahul Savaikar*
 
 This policy covers the free Atlassian Cloud apps published by Rahul Savaikar ("we"), each built on Atlassian Forge:
 

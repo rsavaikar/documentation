@@ -8,9 +8,9 @@ redirect_from:
 
 [Home](./) · [Cloud Connector for Jira](./jira-cloud-connector-docs/) · [Portal Fields for JSM Cloud](./jira-portal-fields-docs/) · [KPI Dashboard Gadget](./kpi-dashboard-gadget-docs/) · [Support](./support.html) · [Support SLA](./sla.html) · [Privacy policy](./privacy-policy.html)
 
-# Support SLA – Silver Fox Apps
+# Support SLA – Silverfox Labs
 
-*Last updated: 31 October 2026 · Rahul Savaikar*
+*Last updated: 4 November 2026 · Rahul Savaikar*
 
 This statement describes the support you can expect for the free Atlassian Cloud apps published by Rahul Savaikar ("we"):
 
