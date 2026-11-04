@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Silver Fox Apps documentation
+title: Silverfox Labs documentation
 ---
 
-# Silver Fox Apps documentation
+# Silverfox Labs documentation
 
 Guides, policies and support for each app.
 
