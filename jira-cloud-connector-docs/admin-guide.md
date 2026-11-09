@@ -81,7 +81,7 @@ Issues already linked are left alone.
 
 ## 4. Run and maintain
 
-- **Activity tab:** the latest 30 events of the connection, kept for 30 days, including warnings such as skipped values or missing transitions. Use **What do these messages mean?** below the log, or see [Troubleshooting](./troubleshooting.html).
+- **Activity tab:** the latest 30 events of the connection, kept for 30 days, including warnings such as skipped values or missing transitions. **Reload**, at the top right of the tab, fetches the latest events and failed changes of this connection; you stay on the same connection and tab, and any unsaved settings are kept. Don't refresh the browser page: that takes you back to the first connection. Use **What do these messages mean?** below the log, or see [Troubleshooting](./troubleshooting.html).
 - **Failed changes:** issues whose change the partner never received are listed above the activity log with the last error. **Retry** sends the whole issue again; temporary problems, such as the partner being down, are retried automatically every hour for a day.
 - **Several partners:** create one connection per partner, each with its own project. Partners never see each other's issues.
 - **Updates:** the two sites may run different app versions for a while; they keep syncing at the newest version both understand, and the Connection tab says if a feature waits for the partner to update.

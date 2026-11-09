@@ -38,7 +38,9 @@ Most problems show up as a message on the connection's **Activity** tab. Find th
 
 **Nothing syncs at all?** Check that both connections show **Paired**, that **Check contract** shows no missing keys, and that the issue's type is mapped and ticked (and carries the sync label, if you set one).
 
-**A change didn't arrive?** Look under **Activity → Failed changes** and click **Retry**, or use **Resync now** in the issue's panel.
+**A change didn't arrive?** Look under **Activity → Failed changes** and click **Retry**, or use **Resync now** in the issue's panel. Click **Reload** at the top right of the Activity tab to see whether the retry went through.
+
+**The Activity tab shows old events?** It doesn't update by itself. Click **Reload** at the top right of the tab; refreshing the browser page instead takes you back to the first connection.
 
 **A field didn't sync, with no warning under Activity?** The field isn't part of the contract on one side. Run **Check contract**: the field's key must be *mapped* on both sites, and **Values flow** must point the way you expect (*both ways*, or *to peer* / *from peer*). If it says *to peer* only, the partner's direction is **Receive only** or yours is **Send only**. Also check that the key is chosen under **Fields per issue type** on both sites; **Check contract** doesn't compare those.
 
