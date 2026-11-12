@@ -9,7 +9,7 @@ title: Support
 
 *Last updated: 4 November 2026 · Rahul Savaikar*
 
-Email [imnicky23@gmail.com](mailto:imnicky23@gmail.com) and **name the app in the subject**. Support hours and response times are in the [Support SLA](./sla.html).
+Email [support@rahulsavaikar.atlassian.net](mailto:support@rahulsavaikar.atlassian.net) and **name the app in the subject**. Support hours and response times are in the [Support SLA](./sla.html).
 
 Many questions are answered in each app's troubleshooting guide:
 

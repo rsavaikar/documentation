@@ -27,7 +27,7 @@ The [privacy policy](../privacy-policy.html#portal-fields-for-jsm-cloud) describ
 
 ## 4. Support and changes
 
-Support is provided by email at [imnicky23@gmail.com](mailto:imnicky23@gmail.com), as described in the [Support SLA](../sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
+Support is provided by email at [support@rahulsavaikar.atlassian.net](mailto:support@rahulsavaikar.atlassian.net), as described in the [Support SLA](../sla.html). We may update the app, add or change features, or stop offering it; where possible we will give notice on the app's Marketplace listing.
 
 ## 5. No warranty
 
@@ -47,7 +47,7 @@ These terms are governed by the laws of India, and the courts of Pune, India hav
 
 ## Contact
 
-[imnicky23@gmail.com](mailto:imnicky23@gmail.com)
+[support@rahulsavaikar.atlassian.net](mailto:support@rahulsavaikar.atlassian.net)
 
 ---
 

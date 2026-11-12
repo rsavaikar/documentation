@@ -23,4 +23,4 @@ Source of the public documentation for Silverfox Labs, published with GitHub Pag
 3. Add the app's section to `privacy-policy.md` (its data table, who sees what, its choices and security), and any app-specific notes to `sla.md`. Link the app's pages to `../sla.html` and `../privacy-policy.html#<app-section>`.
 4. Commit and push to `main`; the site republishes within a few minutes.
 
-Support: [imnicky23@gmail.com](mailto:imnicky23@gmail.com)
+Support: [support@rahulsavaikar.atlassian.net](mailto:support@rahulsavaikar.atlassian.net)

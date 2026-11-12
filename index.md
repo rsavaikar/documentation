@@ -22,4 +22,4 @@ End-user terms are set per app: [Cloud Connector for Jira](./jira-cloud-connecto
 
 ## Support
 
-Email [imnicky23@gmail.com](mailto:imnicky23@gmail.com) and name the app in the subject. The [Support](./support.html) page lists what to include for each app.
+Email [support@rahulsavaikar.atlassian.net](mailto:support@rahulsavaikar.atlassian.net) and name the app in the subject. The [Support](./support.html) page lists what to include for each app.
