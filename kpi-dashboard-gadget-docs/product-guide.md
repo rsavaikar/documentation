@@ -7,15 +7,17 @@ title: Product guide
 
 # KPI Dashboard Gadget – Product guide
 
-*Last updated: 31 October 2026 · Rahul Savaikar*
+*Last updated: 23 November 2026 · Rahul Savaikar*
 
-KPI Dashboard Gadget adds two gadgets to Jira dashboards: **KPI Dashboard** for support performance and **Partner Case Overview** for open cases per partner and customer. You choose the tickets with a JQL query or saved filter; Jira decides which of them each viewer may see. This guide explains what the gadgets show, how they protect your data and how to get started.
+KPI Dashboard Gadget adds three gadgets to Jira dashboards: **KPI Dashboard** for support performance, **Partner Case Overview** for open cases per partner and customer, and **SLA Overview** for service-level results. You choose the tickets with a JQL query or saved filter; Jira decides which of them each viewer may see. This guide explains what the gadgets show, how they protect your data and how to get started.
 
 ## Highlights
 
 **Support KPIs without exports.** Tickets, closed tickets, average response and resolution time, first-response and resolution SLA, customer satisfaction and engineer performance, calculated live in the dashboard.
 
 **Jira's own SLA results.** Choose a Jira Service Management SLA and the gadget shows Jira's met or breached result, on the SLA's own calendar and pause rules, or measure against simple elapsed-time targets if you prefer.
+
+**SLAs you can act on.** SLA Overview shows met and breached shares, median times, tickets about to breach in the next hours and tickets already past target, by priority, organisation and engineer. It can also time the first reply after a ticket is assigned.
 
 **Every viewer sees only their own tickets.** The gadgets read Jira as the person viewing the dashboard, so project permissions, issue security levels and filter sharing always apply.
 
@@ -29,12 +31,14 @@ KPI Dashboard Gadget adds two gadgets to Jira dashboards: **KPI Dashboard** for 
 | --- | --- |
 | KPI Dashboard | Key figures, a monthly ticket trend, tickets by engineer and by organisation, engineer performance, recently resolved tickets and customer satisfaction (CSAT), with filters for month, engineer, organisation, status and request scope |
 | Partner Case Overview | Open cases per customer and by status, open cases, high and critical priority cases, stale cases and recently resolved cases, filtered by partner or organisation |
+| SLA Overview | First response and resolution SLAs, and optionally response after assignment: met and breached, median and 90th-percentile times, open tickets about to breach or past target, a monthly SLA trend, and SLA by priority, organisation and engineer |
 
 Typical uses:
 
 - **Team reviews:** response and resolution times, SLA and CSAT per month and per engineer.
 - **Account and partner meetings:** open and stale cases for one partner and its customers, with security levels shown where tickets have them.
-- **Daily triage:** high and critical open cases, oldest first, one click from Jira.
+- **Daily triage:** high and critical open cases, oldest first, one click from Jira; tickets about to breach their SLA in the next few hours.
+- **Customer and contract reviews:** SLA met and breached per organisation, against each customer's own Jira SLA goals.
 
 ## What the gadgets show
 
@@ -42,7 +46,7 @@ Typical uses:
 
 | Feature | Details |
 | --- | --- |
-| Key figures | Tickets, closed tickets, average response time, average resolution time, first-response SLA met, resolution SLA met (if a resolution SLA is chosen), CSAT satisfied, open tickets, stale tickets, tickets resolved in the last 7 days. The response figure also says how many tickets were measured, excluded or have no first response date. |
+| Key figures | Tickets, closed tickets, average response time, average resolution time, first-response SLA met, resolution SLA met (if a resolution SLA is chosen), CSAT satisfied, open tickets, stale tickets, tickets resolved in the last 7 days, and **Black hole tickets** (if black hole statuses are set). The response figure also says how many tickets were measured, excluded or have no first response date. |
 | Charts | Monthly ticket trend; tickets by engineer, split by status; tickets by organisation, with a share-of-tickets pie; CSAT score distribution and monthly CSAT trend |
 | Tables | Engineer performance; recently resolved (last 7 days); CSAT by engineer |
 | Filters | Month; engineers; organisations (tickets with any or all of them); status; request scope, if a scope field is set |
@@ -59,7 +63,19 @@ Typical uses:
 | Filter | Partner or organisations (tickets with any or all of them) |
 | Exports | Each chart as PNG |
 
-Both gadgets load up to 3,000 tickets and refresh every 15, 30 or 60 minutes, or on **Reload**.
+**SLA Overview**
+
+| Feature | Details |
+| --- | --- |
+| SLAs | **First response** and **Resolution**, each from a Jira Service Management SLA field or from the gadget's own targets per priority; and **Response after assignment** when an assignment date field is set |
+| Key figures | For each SLA: met %, breached %, median time with the 90th percentile; open tickets past target; open tickets at risk (a set share of the target used, 80% by default) |
+| Charts | SLA met per month, one line per SLA |
+| Tables | SLA by priority (your Jira priorities); SLA by organisation, with **About to breach** within 4, 8 or 24 hours and **Past target**; SLA by engineer; open tickets past or near their target, worst first, with each ticket's Jira status |
+| Filters | Month; engineers; priorities; organisations (tickets with any or all of them) |
+| Drill-down | Click a count, a point, an organisation, an engineer or a key to open those tickets in Jira |
+| Exports | Each section as PNG; SLA by organisation, SLA by engineer and the at-risk list as CSV |
+
+All three gadgets load up to 4,000 tickets and refresh every 15, 30 or 60 minutes, or on **Reload**.
 
 ## How the figures are calculated
 
@@ -75,8 +91,25 @@ Both gadgets load up to 3,000 tickets and refresh every 15, 30 or 60 minutes, or
 | Month | The month of the **Month based on** field if one is chosen, else the assignment month, else the created month |
 | Stale | Open, by Jira's status category, and not updated for 14 days or more |
 | Customer (Partner Case Overview) | Each organisation on the ticket that doesn't start with the partner prefix |
+| Black hole tickets | Open tickets in the chosen black hole statuses (for example Waiting for Development) not updated for the chosen number of days (90 by default), out of all open tickets in those statuses, and how many of them have no issue link. Ignores the Month filter. |
 
 Response and resolution times are elapsed time from Jira fields, while a Jira SLA follows its calendar and pauses, so the two can differ on the same ticket. Without an SLA chosen, check the SLA figures against your Jira SLA configuration before using them in contracts.
+
+**SLA Overview**
+
+| Figure | Rule |
+| --- | --- |
+| SLA from a Jira SLA field | Jira's own result for each ticket, with its goals per organisation and priority, calendars, pauses and start and stop conditions. A finished cycle counts as met or breached; a running one as running, at risk or past target, and paused when Jira has paused it. A ticket with no cycle on that SLA has no target and isn't counted. Times are on Jira's SLA calendar. |
+| First response, gadget targets | From the assignment date (if an assignment date field is set and the ticket has one), else the created date, to the first response date field |
+| Resolution, gadget targets | From the created date to the resolved date |
+| Response after assignment | From the assignment date to the first comment visible to the customer, made after it by someone other than the reporter. Internal notes, automation and app comments, and comments by portal customers don't count. Tickets without an assignment date aren't measured. |
+| Targets | Hours per priority, for the priorities of the projects in the query, as Jira lists them. A blank target means no SLA for that priority. |
+| Clock | Per SLA: every hour (24/7), or business hours only (one time zone, working hours and weekdays; daylight saving is followed, public holidays are not excluded) |
+| Met %, breached % | Met ÷ (met + breached), over tickets whose clock has stopped; met % + breached % = 100% |
+| At risk | Open, within target, with at least the set share of the target used (80% by default) |
+| About to breach | Open, within target, with less than 4, 8 or 24 hours left on the SLA's own clock |
+| Past target | Open and already over the target; it will breach |
+| Month | As in KPI Dashboard. Met, breached and median follow it; the monthly trend, at-risk, about-to-breach and past-target figures don't. |
 
 ## Security, privacy and data
 
@@ -97,15 +130,15 @@ The gadgets need Jira Cloud and a Jira administrator to install the app. Satisfa
 
 | Permission | Why |
 | --- | --- |
-| `read:jira-work` | Run the gadget's query or saved filter, list fields and search saved filters, all as the viewing user |
+| `read:jira-work` | Run the gadget's query or saved filter, list fields, search saved filters and read the priorities of the query's projects, all as the viewing user |
 
 ## Getting started
 
 Setting up takes about 10 minutes.
 
 1. **Install** KPI Dashboard Gadget from the Atlassian Marketplace.
-2. On a Jira dashboard, click **Edit → Add gadget** and add **KPI Dashboard** or **Partner Case Overview**.
-3. In the gadget's settings, enter a JQL query or choose a saved filter, click **Check query**, and choose the fields and set the prefixes for your site under **Fields, organization groups and SLA targets**.
+2. On a Jira dashboard, click **Edit → Add gadget** and add **KPI Dashboard**, **Partner Case Overview** or **SLA Overview**.
+3. In the gadget's settings, enter a JQL query or choose a saved filter, click **Check query**, and choose the fields and set the prefixes for your site under **Fields, organization groups and SLA targets** (in SLA Overview, **Fields and SLA targets**, where you also choose your Jira SLA fields or set targets).
 4. Click **Save settings** and close the settings.
 
 The [Admin guide](./admin-guide.html) walks through each step.
@@ -116,8 +149,11 @@ We list these openly so you can judge fit before installing.
 
 | Area | Today |
 | --- | --- |
-| Number of tickets | Up to 3,000 per gadget; narrow the query for complete figures |
-| SLA | Jira's own result when an SLA is chosen; otherwise elapsed time against two targets by priority, not Jira's SLA calendars or goals |
+| Number of tickets | Up to 4,000 per gadget; narrow the query for complete figures |
+| SLA (KPI Dashboard) | Jira's own result when an SLA is chosen; otherwise elapsed time against two targets by priority, not Jira's SLA calendars or goals |
+| SLA (SLA Overview, gadget targets) | Business hours use one time zone and don't exclude public holidays. Use the Jira SLA fields for per-customer calendars and goals. |
+| Response after assignment | Reads each ticket's comments, so the gadget loads more slowly. If Jira returns only some of a ticket's comments, the gadget says how many tickets it couldn't check in full. |
+| Priority list (SLA Overview) | Read from the projects in up to 500 of the query's tickets, for up to 10 projects, from the priorities a project allows when creating tickets. If none can be read, every priority on the site is listed. |
 | Links to Jira | A drill-down link carries up to 400 ticket keys; for more, Jira opens the gadget's query instead |
 | Recently resolved | Adds tickets resolved in the last 7 days that match the gadget's query apart from its created-date conditions; needs a query with a project clause |
 | Field lists | Show the fields visible to the person editing the gadget. A viewer who can't see a field gets no figures from it. |
@@ -135,6 +171,10 @@ We list these openly so you can judge fit before installing.
 **Why do response time and SLA differ?** Response time is elapsed time between two dates. A Jira SLA follows its calendar and pauses, so it can record less time for the same ticket, for example outside business hours.
 
 **Does the app change tickets?** No. It only reads from Jira.
+
+**Should SLA Overview use our Jira SLAs or its own targets?** Use your Jira SLA fields (for example Time to first response and Time to resolution) when you have them: the gadget then shows exactly what Jira records, with your goals per customer, calendars, pauses and stop conditions. Its own targets suit projects without Jira SLAs, or a measure Jira can't express, such as response after assignment.
+
+**Does SLA Overview read comment text?** Only to find the first reply after assignment, and only when an assignment date field is set. The time of that reply is the only thing passed on to the browser; comment text and authors are not, and nothing is stored.
 
 ---
 

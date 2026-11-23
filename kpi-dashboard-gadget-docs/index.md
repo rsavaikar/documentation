@@ -7,9 +7,15 @@ title: KPI Dashboard Gadget Documentation
 
 # KPI Dashboard Gadget Documentation
 
-*Last updated: 30 October 2026 · Rahul Savaikar*
+*Last updated: 23 November 2026 · Rahul Savaikar*
 
-Two Jira dashboard gadgets for support teams. **KPI Dashboard** shows ticket volumes, response and resolution times, SLA, customer satisfaction and engineer performance. **Partner Case Overview** shows open, high-priority, stale and recently resolved cases per partner and customer organisation. Both are calculated live from the tickets a JQL query or saved filter selects, and each viewer sees only the tickets their own Jira permissions allow.
+Three Jira dashboard gadgets for support teams:
+
+- **KPI Dashboard** shows ticket volumes, response and resolution times, SLA, customer satisfaction, engineer performance and tickets parked too long in waiting statuses.
+- **Partner Case Overview** shows open, high-priority, stale and recently resolved cases per partner and customer organisation.
+- **SLA Overview** shows first response and resolution SLAs (Jira's own, or targets per priority on a 24/7 or business-hours clock), response after assignment, breaches, tickets about to breach, and SLA by priority, organisation and engineer.
+
+All three are calculated live from the tickets a JQL query or saved filter selects, and each viewer sees only the tickets their own Jira permissions allow.
 
 ## Documentation
 
