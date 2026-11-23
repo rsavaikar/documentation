@@ -7,7 +7,7 @@ title: For dashboard viewers
 
 # KPI Dashboard Gadget – For dashboard viewers
 
-*Last updated: 31 October 2026 · Rahul Savaikar*
+*Last updated: 23 November 2026 · Rahul Savaikar*
 
 This page explains how to read and use the gadgets on a dashboard. The figures include only the tickets your own Jira permissions and issue security allow you to see, so a colleague may see different numbers on the same dashboard.
 
@@ -40,6 +40,7 @@ This page explains how to read and use the gadgets on a dashboard. The figures i
 | CSAT satisfied | Share of ratings that are 4 or 5 |
 | Open / not closed | All other tickets, which includes statuses such as Canceled or Declined |
 | Stale tickets | Open and not updated for 14 days or more; ignores the Month filter |
+| Black hole tickets | Open tickets in the waiting statuses your administrator chose, such as Waiting for Development, not updated for the chosen number of days, out of all open tickets in those statuses; and how many have no issue link, for example to a development ticket. Click either number to open those tickets. Shown only if black hole statuses are set; ignores the Month filter. |
 | Tickets with response data | Tickets with a measured response time; negative durations are left out |
 
 Response time and a Jira SLA can differ on the same ticket: response time is elapsed time, while the SLA follows its calendar and pauses.
@@ -73,6 +74,29 @@ The figures fit on one row on a wide gadget and wrap onto more rows on a narrowe
 | Open cases, High and critical priority cases, Stale cases, Recently resolved | Tables; click a key to open the ticket. Sort open cases by oldest, newest or least recently updated. A **Security level** column appears when tickets have one. |
 
 A customer is any organisation on the ticket that doesn't start with the partner prefix. Tickets without one show under **No customer organization**.
+
+## SLA Overview
+
+**Filters:** Month, Engineer(s), Priority and Organization(s); choose whether tickets need **any** or **all** of the organisations. **Reset filters** clears them.
+
+The footer says how each SLA is measured: from a Jira SLA (**Jira SLA**), or against the gadget's own targets on a **24/7** or **business hours** clock.
+
+| Figure or section | Meaning |
+| --- | --- |
+| *SLA* met | Share of measured tickets within target, with met and breached counts. Measured means the SLA's clock has stopped. |
+| *SLA* breached | Share of measured tickets that missed the target (met + breached = 100%). Click to open them. Open tickets already past target are noted below it. |
+| Median time to … | Half of the measured tickets took less than this; **90% within** shows the slowest tenth. Times on business hours or a Jira SLA calendar stay in hours. |
+| Open, past target | Open tickets already over a target; they will breach. Ignores the Month filter. |
+| Open, at risk | Open tickets that have used the set share of a target (80% by default). Ignores the Month filter. |
+| SLA met per month | One line per SLA, across all months; the other filters apply. Click a point to open that month's measured tickets for that SLA. |
+| SLA by priority | Met, breached and median per priority, with each priority's target, or **Jira SLA** when the SLA comes from Jira, whose goals vary by customer |
+| SLA by organization | Per organisation: met, breached and median for the selected month, plus **About to breach** (open, less than 4, 8 or 24 hours left; choose above the table) and **Past target**. Worst first. A ticket with several organisations counts under each. |
+| Open tickets past or near their target | One row per ticket and SLA, worst first: priority, Jira status, engineer, which SLA, time so far against the target, and **SLA status**: *Over by …*, or the share of the target used. *Paused* marks a Jira SLA that Jira has paused. |
+| SLA by engineer | Met, breached and median per SLA for each engineer (the current assignee), and their open tickets past target |
+
+**Response after assignment** appears when your administrator set an assignment date field: the time from the assignment date to the first reply the customer could see, by someone other than the reporter. Tickets without an assignment date aren't measured, and the figure says how many.
+
+Tables that follow the Month filter say which month and how many tickets they cover; choose **All months** for the whole query. **Export CSV** saves SLA by organisation, SLA by engineer and the at-risk list; **Export PNG** saves a section as an image.
 
 ## Opening tickets in Jira
 
