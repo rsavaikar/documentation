@@ -31,7 +31,7 @@ KPI Dashboard Gadget adds three gadgets to Jira dashboards: **KPI Dashboard** fo
 | --- | --- |
 | KPI Dashboard | Key figures, a monthly ticket trend, tickets by engineer and by organisation, engineer performance, recently resolved tickets and customer satisfaction (CSAT), with filters for month, engineer, organisation, status and request scope |
 | Partner Case Overview | Open cases per customer and by status, open cases, high and critical priority cases, stale cases and recently resolved cases, filtered by partner or organisation |
-| SLA Overview | First response and resolution SLAs, and optionally response after assignment: met and breached, median and 90th-percentile times, open tickets about to breach or past target, a monthly SLA trend, and SLA by priority, organisation and engineer |
+| SLA Overview | First response and resolution SLAs, and optionally response after assignment: met and breached, median and 90th-percentile times, open tickets about to breach or past target, an SLA trend by month or by week, and SLA by priority, organisation and engineer |
 
 Typical uses:
 
@@ -69,11 +69,11 @@ Typical uses:
 | --- | --- |
 | SLAs | **First response** and **Resolution**, each from a Jira Service Management SLA field or from the gadget's own targets per priority; and **Response after assignment** when an assignment date field is set |
 | Key figures | For each SLA: met %, breached %, median time with the 90th percentile; open tickets past target; open tickets at risk (a set share of the target used, 80% by default) |
-| Charts | SLA met per month, one line per SLA |
-| Tables | SLA by priority (your Jira priorities); SLA by organisation, with **About to breach** within 4, 8 or 24 hours and **Past target**; SLA by engineer; open tickets past or near their target, worst first, with each ticket's Jira status |
+| Charts | SLA met per month, one line per SLA; with a month selected, SLA met per week of that month (days 1–7, 8–14, 15–21, 22–28 and 29 to the end) |
+| Tables | SLA by priority (your Jira priorities); SLA by organisation, with **About to breach** within 4, 8 or 24 hours and **Past target**; SLA by engineer; open tickets past or near their target, worst first, with each ticket's Jira status. SLA by organisation and the at-risk list show 10 rows at a time, with **Load more**. |
 | Filters | Month; engineers; priorities; organisations (tickets with any or all of them) |
 | Drill-down | Click a count, a point, an organisation, an engineer or a key to open those tickets in Jira |
-| Exports | Each section as PNG; SLA by organisation, SLA by engineer and the at-risk list as CSV |
+| Exports | Each section as PNG; SLA by priority, SLA by organisation, SLA by engineer and the at-risk list as CSV, with **Export CSV** beside **Export PNG** |
 
 All three gadgets load up to 4,000 tickets and refresh every 15, 30 or 60 minutes, or on **Reload**.
 
@@ -109,7 +109,7 @@ Response and resolution times are elapsed time from Jira fields, while a Jira SL
 | At risk | Open, within target, with at least the set share of the target used (80% by default) |
 | About to breach | Open, within target, with less than 4, 8 or 24 hours left on the SLA's own clock |
 | Past target | Open and already over the target; it will breach |
-| Month | As in KPI Dashboard. Met, breached and median follow it; the monthly trend, at-risk, about-to-breach and past-target figures don't. |
+| Month | As in KPI Dashboard. Met, breached and median follow it. The trend shows every month with **All months**, and the weeks of the chosen month otherwise, by the same date. At-risk, about-to-breach and past-target figures ignore it. |
 
 ## Security, privacy and data
 

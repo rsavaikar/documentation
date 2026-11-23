@@ -88,15 +88,15 @@ The footer says how each SLA is measured: from a Jira SLA (**Jira SLA**), or aga
 | Median time to … | Half of the measured tickets took less than this; **90% within** shows the slowest tenth. Times on business hours or a Jira SLA calendar stay in hours. |
 | Open, past target | Open tickets already over a target; they will breach. Ignores the Month filter. |
 | Open, at risk | Open tickets that have used the set share of a target (80% by default). Ignores the Month filter. |
-| SLA met per month | One line per SLA, across all months; the other filters apply. Click a point to open that month's measured tickets for that SLA. |
+| SLA met per month / per week | One line per SLA; the other filters apply. With **All months**, one point per month. With a month chosen, one point per week of that month: days 1–7, 8–14, 15–21, 22–28 and 29 to the end. Click a point to open that month's or week's measured tickets for that SLA. |
 | SLA by priority | Met, breached and median per priority, with each priority's target, or **Jira SLA** when the SLA comes from Jira, whose goals vary by customer |
-| SLA by organization | Per organisation: met, breached and median for the selected month, plus **About to breach** (open, less than 4, 8 or 24 hours left; choose above the table) and **Past target**. Worst first. A ticket with several organisations counts under each. |
-| Open tickets past or near their target | One row per ticket and SLA, worst first: priority, Jira status, engineer, which SLA, time so far against the target, and **SLA status**: *Over by …*, or the share of the target used. *Paused* marks a Jira SLA that Jira has paused. |
+| SLA by organization | Per organisation: met, breached and median for the selected month, plus **About to breach** (open, less than 4, 8 or 24 hours left; choose under the table's title) and **Past target**. Worst first. A ticket with several organisations counts under each. Shows 10 organisations; **Load more** adds 10. |
+| Open tickets past or near their target | One row per ticket and SLA, worst first: priority, Jira status, engineer, which SLA, time so far against the target, and **SLA status**: *Over by …*, or the share of the target used. *Paused* marks a Jira SLA that Jira has paused. Shows 10 rows; **Load more** adds 10. |
 | SLA by engineer | Met, breached and median per SLA for each engineer (the current assignee), and their open tickets past target |
 
 **Response after assignment** appears when your administrator set an assignment date field: the time from the assignment date to the first reply the customer could see, by someone other than the reporter. Tickets without an assignment date aren't measured, and the figure says how many.
 
-Tables that follow the Month filter say which month and how many tickets they cover; choose **All months** for the whole query. **Export CSV** saves SLA by organisation, SLA by engineer and the at-risk list; **Export PNG** saves a section as an image.
+Tables that follow the Month filter say which month and how many tickets they cover; choose **All months** for the whole query. **Export CSV**, beside **Export PNG** at the top right of a table, saves SLA by priority, SLA by organisation, SLA by engineer and the at-risk list, with every row, not only those shown; **Export PNG** saves a section as an image.
 
 ## Opening tickets in Jira
 
