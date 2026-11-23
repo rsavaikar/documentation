@@ -17,7 +17,7 @@ Updates install automatically. If a dashboard still shows the previous version, 
 
 - **Open tickets by SLA status:** past target, about to breach, at risk and on track, now.
 - **How close to the target:** measured tickets by the share of the target used, from under 50% to over 200%, so near misses stand apart from large breaches.
-- **Met vs breached by organization:** the 10 organisations with the most tickets, lowest met % first.
+- **Met vs breached by organization:** the 10 organisations with the most tickets, lowest met % first; **Load more** adds 10, and **Organization(s)** shows only the organisations you choose.
 
 Each chart follows the filters, opens its tickets in Jira when clicked, and exports as PNG.
 
