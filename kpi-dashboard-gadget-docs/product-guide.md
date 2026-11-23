@@ -70,7 +70,7 @@ Typical uses:
 | SLAs | **First response** and **Resolution**, each from a Jira Service Management SLA field or from the gadget's own targets per priority. The gadget's own clocks start from the created date, or from the assignment date if you choose. **Response after assignment** is added whenever an assignment date field is set, including next to Jira SLA fields. A line above the figures says where each clock starts, with a link to this documentation. |
 | Key figures | For each SLA: met %, breached %, median time with the 90th percentile; open tickets past target; open tickets at risk (a set share of the target used, 80% by default) |
 | Charts | SLA met per month, one line per SLA; with a month selected, SLA met per week of that month (days 1–7, 8–14, 15–21, 22–28 and 29 to the end) |
-| Tables | SLA by priority (your Jira priorities); SLA by organisation, with **About to breach** within 4, 8 or 24 hours and **Past target**; SLA by engineer; open tickets past or near their target, worst first, with each ticket's Jira status. SLA by organisation and the at-risk list show 10 rows at a time, with **Load more**. |
+| Tables | SLA by priority (your Jira priorities, with the goals applied); SLA by organisation, with each customer's **Goal**, **About to breach** within 4, 8 or 24 hours and **Past target**; SLA by engineer; open tickets past or near their target, worst first, with each ticket's Jira status. SLA by organisation and the at-risk list show 10 rows at a time, with **Load more**. |
 | Filters | Month; engineers; priorities; organisations (tickets with any or all of them) |
 | Drill-down | Click a count, a point, an organisation, an engineer or a key to open those tickets in Jira |
 | Exports | Each section as PNG; SLA by priority, SLA by organisation, SLA by engineer and the at-risk list as CSV, with **Export CSV** beside **Export PNG** |
@@ -172,6 +172,8 @@ We list these openly so you can judge fit before installing.
 **Why do response time and SLA differ?** Response time is elapsed time between two dates. A Jira SLA follows its calendar and pauses, so it can record less time for the same ticket, for example outside business hours.
 
 **Does the app change tickets?** No. It only reads from Jira.
+
+**Can the gadget read our SLA settings (goals, calendars) from the project settings?** No. Jira Service Management has no public API for SLA configuration, and Forge apps can't use Jira's internal ones. It doesn't need to: with your Jira SLA fields chosen, each ticket's figures come from the SLA Jira applied to that ticket, with your goals per customer and priority, calendars, pauses and stop conditions. The **Goal** columns show the goals Jira applied.
 
 **Should SLA Overview use our Jira SLAs or its own targets?** Use your Jira SLA fields (for example Time to first response and Time to resolution) when you have them: the gadget then shows exactly what Jira records, with your goals per customer, calendars, pauses and stop conditions. Its own targets suit projects without Jira SLAs, or a measure Jira can't express, such as measuring from the assignment date.
 

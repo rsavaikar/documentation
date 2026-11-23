@@ -13,6 +13,14 @@ Updates install automatically. If a dashboard still shows the previous version, 
 
 ## 23 November 2026
 
+**All gadgets: choose JSM projects.** A third way to choose the tickets, next to JQL and saved filter: tick Jira Service Management projects in a list, with optional extra JQL such as a date condition. No new permission is needed.
+
+**SLA Overview: the goals Jira applied.**
+
+- **SLA by priority** shows, for an SLA from Jira, the goals Jira applied to those tickets (for example 1–4 h when customers differ), where it said "Jira SLA".
+- **SLA by organization** has a **Goal** column for first response and resolution, so each customer's SLA is visible next to its results.
+- The settings show target columns only for SLAs on the gadget's own targets; an SLA from Jira gets one line saying its goals come from Jira per customer and priority.
+
 **SLA Overview: choose where the clocks start.** A new setting, **Start the SLA clocks from**, chooses **Created** (default) or **Assignment Date/Time (else Created)** for the gadget's own first response and resolution clocks:
 
 - From the assignment date, first response stops at the first reply the customer could see after it, and resolution runs to the resolved date. Tickets without an assignment date start from created, and the gadget says how many.
