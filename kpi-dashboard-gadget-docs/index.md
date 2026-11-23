@@ -23,6 +23,7 @@ All three are calculated live from the tickets a JQL query or saved filter selec
 - [Admin guide](./admin-guide.html) — Installation, adding the gadgets and their settings.
 - [For dashboard viewers](./for-viewers.html) — Reading the figures, filters, charts and exports.
 - [Troubleshooting](./troubleshooting.html) — Messages you may see and what to do.
+- [Release notes](./release-notes.html) — What changed in each update.
 
 ## Support and policies
 
