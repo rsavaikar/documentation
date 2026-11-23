@@ -68,7 +68,7 @@ Open **Fields, organization groups and SLA targets** to fit the gadget to your s
 | --- | --- | --- |
 | First response SLA | Not used | Recommended with Jira Service Management. Choose your SLA field, for example *Time to first response*. Jira's own goals, calendars, pauses and stop conditions then apply, and the gadget's targets for it are greyed out. |
 | Resolution SLA | Not used | The same for resolution, for example *Time to resolution* |
-| Assignment date field | Not used | Optional. Used for the Month filter and, if you choose it below, as the start of the gadget's SLA clocks. |
+| Assignment date field | Not used | Optional. Adds **Response after assignment** (its own column in the targets), decides the Month filter and, if you choose it below, starts the gadget's SLA clocks. |
 | Start the SLA clocks from | Created | **Created**, or **Assignment Date/Time (else Created)**. Applies to the gadget's own first response and resolution targets; a Jira SLA field sets its own start. Needs an assignment date field. |
 | First response date field | `[CHART] Date of First Response` | Where the gadget's own first response clock stops |
 | Month based on | Same as the assignment date, else created | As in KPI Dashboard |
@@ -82,6 +82,7 @@ Tips for SLA Overview:
 
 - Prefer the Jira SLA fields when you have them: the figures then match Jira exactly, including different goals and calendars per customer. For example, a response clock that Jira stops when a ticket enters Awaiting Closure is stopped in the gadget too.
 - **Starting from the assignment date:** first response runs to the first public agent reply after the assignment date, and resolution to the resolved date. Tickets without an assignment date start from created, and the gadget says how many. First response then reads each ticket's comments, so the gadget loads more slowly. The settings and the gadget link to this guide under **How SLAs are measured**.
+- **Response after assignment** is the way to measure from the assignment date when first response and resolution come from Jira SLA fields: it runs from the assignment date to the first public agent reply after it, with its own targets and clock, next to Jira's figures. It is hidden when the gadget's own first response already starts from the assignment date.
 - For customers with different cover, such as 24/7 first response, add another SLA Overview gadget with its own query and settings.
 - The priority list is read from the priorities a project allows when creating tickets, so the person editing the gadget needs to be able to create tickets in those projects. Otherwise every priority on the site is listed.
 
