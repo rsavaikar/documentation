@@ -94,7 +94,7 @@ The footer says how each SLA is measured: from a Jira SLA (**Jira SLA**), or aga
 | Open tickets past or near their target | One row per ticket and SLA, worst first: priority, Jira status, engineer, which SLA, time so far against the target, and **SLA status**: *Over by …*, or the share of the target used. *Paused* marks a Jira SLA that Jira has paused. Shows 10 rows; **Load more** adds 10. |
 | SLA by engineer | Met, breached and median per SLA for each engineer (the current assignee), and their open tickets past target |
 
-**Response after assignment** appears when your administrator set an assignment date field: the time from the assignment date to the first reply the customer could see, by someone other than the reporter. Tickets without an assignment date aren't measured, and the figure says how many.
+**Where the clocks start:** a line above the figures says whether each SLA comes from Jira's own SLA or from the gadget's clock, and whether that clock starts from the created date or the assignment date. With the assignment date, first response stops at the first reply the customer could see after it, by someone other than the reporter; tickets without an assignment date start from created, and the line says how many. **How SLAs are measured** opens this page.
 
 Tables that follow the Month filter say which month and how many tickets they cover; choose **All months** for the whole query. **Export CSV**, beside **Export PNG** at the top right of a table, saves SLA by priority, SLA by organisation, SLA by engineer and the at-risk list, with every row, not only those shown; **Export PNG** saves a section as an image.
 
