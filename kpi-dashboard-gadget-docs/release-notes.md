@@ -33,6 +33,7 @@ Updates install automatically. If a dashboard still shows the previous version, 
 - Fixed: the gadget failed to display when a first response or resolution SLA was left as **Not used**.
 - Fixed: CSV exports were named, for example, `sla-at-risk.csv-2026-11-23.csv`; they are now `sla-at-risk-2026-11-23.csv`.
 - Clicking a point on the SLA trend now also opens months or weeks with no breaches.
+- The **Month** filter lists the newest month first, as in KPI Dashboard.
 
 ## 19 November 2026
 
