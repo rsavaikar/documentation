@@ -7,9 +7,19 @@ title: Release notes
 
 # KPI Dashboard Gadget – Release notes
 
-*Last updated: 23 November 2026 · Rahul Savaikar*
+*Last updated: 24 November 2026 · Rahul Savaikar*
 
 Updates install automatically. If a dashboard still shows the previous version, press Ctrl+F5. None of these releases needed new permissions.
+
+## 24 November 2026
+
+**SLA Overview: three new charts**, for the SLA chosen under **Charts show** (first response, resolution or response after assignment):
+
+- **Open tickets by SLA status:** past target, about to breach, at risk and on track, now.
+- **How close to the target:** measured tickets by the share of the target used, from under 50% to over 200%, so near misses stand apart from large breaches.
+- **Met vs breached by organization:** the 10 organisations with the most tickets, lowest met % first.
+
+Each chart follows the filters, opens its tickets in Jira when clicked, and exports as PNG.
 
 ## 23 November 2026
 
