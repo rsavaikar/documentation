@@ -13,6 +13,13 @@ Updates install automatically. If a dashboard still shows the previous version, 
 
 ## 23 November 2026
 
+**SLA Overview: choose where the clocks start.** A new setting, **Start the SLA clocks from**, chooses **Created** (default) or **Assignment Date/Time (else Created)** for the gadget's own first response and resolution clocks:
+
+- From the assignment date, first response stops at the first reply the customer could see after it, and resolution runs to the resolved date. Tickets without an assignment date start from created, and the gadget says how many.
+- This replaces the separate **Response after assignment** measure. Gadgets that used it: choose **Assignment Date/Time** to measure first response from the assignment date. Its own targets aren't carried over, so check the first response targets.
+- A line above the figures says where each SLA's clock starts, or that it comes from Jira's own SLA, with a **How SLAs are measured** link to this documentation. The settings have the same link.
+- Jira SLA fields still set their own start; the setting is greyed out when both SLAs use them.
+
 **New: SLA Overview gadget.** A third gadget for service-level results:
 
 - **First response** and **Resolution** SLAs, either from your Jira Service Management SLA fields (with Jira's own goals per customer, calendars, pauses and stop conditions) or from targets per priority on a 24/7 or business-hours clock.
