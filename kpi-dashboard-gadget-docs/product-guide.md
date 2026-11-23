@@ -3,7 +3,7 @@ layout: default
 title: Product guide
 ---
 
-[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For dashboard viewers](./for-viewers.html) · [Troubleshooting](./troubleshooting.html) · [Support](./support.html)
+[Home](./) · [Product guide](./product-guide.html) · [Admin guide](./admin-guide.html) · [For dashboard viewers](./for-viewers.html) · [Troubleshooting](./troubleshooting.html) · [Release notes](./release-notes.html) · [Support](./support.html)
 
 # KPI Dashboard Gadget – Product guide
 

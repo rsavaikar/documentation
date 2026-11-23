@@ -10,6 +10,7 @@ Source of the public documentation for **KPI Dashboard Gadget**, published with 
 | Admin guide | `admin-guide.md` |
 | For dashboard viewers | `for-viewers.md` |
 | Troubleshooting | `troubleshooting.md` |
+| Release notes | `release-notes.md` |
 | Support | `support.md` |
 | End-user terms | `end-user-terms.md` |
 
