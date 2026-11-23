@@ -89,8 +89,8 @@ The footer says how each SLA is measured: from a Jira SLA (**Jira SLA**), or aga
 | Open, past target | Open tickets already over a target; they will breach. Ignores the Month filter. |
 | Open, at risk | Open tickets that have used the set share of a target (80% by default). Ignores the Month filter. |
 | SLA met per month / per week | One line per SLA; the other filters apply. With **All months**, one point per month. With a month chosen, one point per week of that month: days 1–7, 8–14, 15–21, 22–28 and 29 to the end. Click a point to open that month's or week's measured tickets for that SLA. |
-| SLA by priority | Met, breached and median per priority, with each priority's target, or **Jira SLA** when the SLA comes from Jira, whose goals vary by customer |
-| SLA by organization | Per organisation: met, breached and median for the selected month, plus **About to breach** (open, less than 4, 8 or 24 hours left; choose under the table's title) and **Past target**. Worst first. A ticket with several organisations counts under each. Shows 10 organisations; **Load more** adds 10. |
+| SLA by priority | Met, breached and median per priority, with each priority's target. For an SLA from Jira, the goals Jira applied to those tickets, for example **1–4 h** when customers have different goals. |
+| SLA by organization | Per organisation: the **Goal** applied to its tickets (from Jira's SLA data for a Jira SLA), met, breached and median for the selected month, plus **About to breach** (open, less than 4, 8 or 24 hours left; choose under the table's title) and **Past target**. Worst first. A ticket with several organisations counts under each. Shows 10 organisations; **Load more** adds 10. |
 | Open tickets past or near their target | One row per ticket and SLA, worst first: priority, Jira status, engineer, which SLA, time so far against the target, and **SLA status**: *Over by …*, or the share of the target used. *Paused* marks a Jira SLA that Jira has paused. Shows 10 rows; **Load more** adds 10. |
 | SLA by engineer | Met, breached and median per SLA for each engineer (the current assignee), and their open tickets past target |
 

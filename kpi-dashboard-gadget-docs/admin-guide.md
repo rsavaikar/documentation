@@ -30,6 +30,7 @@ Under **Tickets to include**, choose one:
 
 - **JQL query:** enter a query, for example `project = ABC AND created >= startOfMonth(-2) ORDER BY created DESC` for KPI Dashboard, `project = ABC AND (statusCategory != Done OR resolved >= -7d) ORDER BY created DESC` for Partner Case Overview, or `project = ABC AND created >= startOfMonth(-5) ORDER BY created DESC` for SLA Overview.
 - **Saved filter:** search for a filter by name and select it; **Selected:** under the list confirms your choice. Everyone who views the dashboard needs access to that filter; if they don't, they see an error instead of data. A JQL query avoids that. List people by account ID rather than with `currentUser()`, which means someone different for each viewer.
+- **JSM projects:** tick one or more Jira Service Management projects in a searchable list (only service projects you can browse are listed), and optionally add JQL to narrow them, for example `created >= startOfMonth(-5)`. The gadget runs `project in (…) AND (your JQL) ORDER BY created DESC`; end your JQL with its own `ORDER BY` to change the order. **Check query** shows the exact query.
 
 Keep the query bounded, for example by project and date, and add `ORDER BY created DESC` so the newest tickets come first: each gadget loads up to 4,000 tickets.
 
@@ -73,7 +74,7 @@ Open **Fields, organization groups and SLA targets** to fit the gadget to your s
 | First response date field | `[CHART] Date of First Response` | Where the gadget's own first response clock stops |
 | Month based on | Same as the assignment date, else created | As in KPI Dashboard |
 | Organizations field and prefixes | `Organizations`, blank | Used for the Organization(s) filter and SLA by organisation |
-| SLA targets | Placeholder hours per priority | One row per priority of the projects in the query, fetched from Jira when the settings open; **Fetch priorities again** refreshes the list. One column per SLA. A blank target means no SLA for that priority. |
+| SLA targets | Placeholder hours per priority | One row per priority of the projects in the query, fetched from Jira when the settings open; **Fetch priorities again** refreshes the list. One column per SLA on the gadget's own targets; an SLA that comes from a Jira SLA field has no column, because Jira sets its goals per customer and priority. A blank target means no SLA for that priority. |
 | Clock | Every hour (24/7) | Per SLA: 24/7 or business hours only |
 | Business hours | Your browser's time zone, 08:00–16:00, Monday to Friday | Used by any SLA on business hours. Public holidays are not excluded. |
 | At risk when this much of the target is used (%) | 80 | When an open ticket counts as at risk |
