@@ -68,8 +68,8 @@ With the gadget's own targets, first response stops at the first response date f
 **SLA by priority shows fewer tickets than Jira's search.**
 It follows the Month filter, which starts on the latest month. Choose **All months** to cover the whole query.
 
-**The SLAs don't start from the assignment date.**
-In the settings, choose an **Assignment date field**, then **Start the SLA clocks from: Assignment Date/Time (else Created)**. It applies only to SLAs on the gadget's own targets; a Jira SLA field sets its own start. Tickets without an assignment date start from created, and the line above the figures says how many. Reading comments for first response makes the gadget load more slowly.
+**The SLAs don't start from the assignment date, or Start the SLA clocks from is greyed out.**
+In the settings, choose an **Assignment date field**, then **Start the SLA clocks from: Assignment Date/Time (else Created)**. It applies only to SLAs on the gadget's own targets; a Jira SLA field sets its own start, so the choice is greyed out when both first response and resolution use Jira SLA fields. In that case use **Response after assignment**, which is added next to Jira's SLAs as soon as an assignment date field is set. Tickets without an assignment date start from created, and the line above the figures says how many. Reading comments for first response makes the gadget load more slowly.
 
 **The SLA Overview priorities don't match our project.**
 Open the settings and click **Fetch priorities again**. The list comes from the priorities the query's projects allow when creating tickets; if you can't create tickets there, every priority on the site is listed.
